@@ -7,6 +7,7 @@
     <documentationStatus xmi:id="_oIYS0GbREem97qk6meX9dA" label="unchecked" code="UCK"/>
     <documentationStatus xmi:id="_oIYS0WbREem97qk6meX9dA" label="checked" code="CHK"/>
     <documentationStatus xmi:id="_oIYS0mbREem97qk6meX9dA" label="validated" code="VAL"/>
+    <deletedFolders>process/job_migration</deletedFolders>
     <migrationTask xmi:id="_oFFuQGbREem97qk6meX9dA" id="org.talend.repository.localprovider.RemoveRoutineFolderTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>
     <migrationTask xmi:id="_oFFuQWbREem97qk6meX9dA" id="org.talend.repository.localprovider.model.migration.ChangeXmiSerialization" breaks="5.1.1" version="5.1.2" status="noimpact"/>
     <migrationTask xmi:id="_oFFuQmbREem97qk6meX9dA" id="org.talend.repository.model.migration.CleanFoldersMigrationTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>
