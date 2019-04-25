@@ -12,6 +12,28 @@
     <module>code/routines</module>
     <module>jobs/process/cmdb_light_model/a00_master_job_0.1</module>
     <module>jobs/process/cmdb_light_model/a01_extract_input_file_0.1</module>
+    <module>jobs/process/CMDB_New/IPVPN/a001_file_extraction_0.1</module>
+    <module>jobs/process/CMDB_New/IPVPN/a009_node_processing_0.1</module>
+    <module>jobs/process/CMDB_New/IPVPN/a003_vrf_processing_0.1</module>
+    <module>jobs/process/CMDB_New/IPVPN/a008_vnf_processing_0.1</module>
+    <module>jobs/process/CMDB_New/IPVPN/a011_circuit_processing_0.1</module>
+    <module>jobs/process/CMDB_New/IPVPN/a012_technical_service_processing_0.1</module>
+    <module>jobs/process/CMDB_New/IPVPN/a0031_vrf_processing_internet_0.1</module>
+    <module>jobs/process/CMDB_New/IPVPN/a007_other_ci_processing_0.1</module>
+    <module>jobs/process/CMDB_New/IPVPN/a004_qos_processing_0.1</module>
+    <module>jobs/joblets/prejob_0.1</module>
+    <module>jobs/process/CMDB_New/IPVPN/a005_location_processing_0.1</module>
+    <module>jobs/process/CMDB_New/IPVPN/ipvpn_file_extraction_0.1</module>
+    <module>jobs/process/CMDB_New/IPVPN/a015_bp_instantiation_processing_0.1</module>
+    <module>jobs/process/CMDB_New/IPVPN/a000_ipvpn_master_0.1</module>
+    <module>jobs/process/CMDB_New/IPVPN/a010_access_processing_0.1</module>
+    <module>jobs/process/CMDB_New/IPVPN/a006_olo_processing_0.1</module>
+    <module>jobs/joblets/map_service_file_to_refservmodtab_0.1</module>
+    <module>jobs/process/CMDB_New/IPVPN/a000_internet_master_0.1</module>
+    <module>jobs/process/CMDB_New/IPVPN/a013_site_processing_0.1</module>
+    <module>jobs/process/CMDB_New/IPVPN/file_a002_customer_processing_0.1</module>
+    <module>jobs/process/CMDB_New/IPVPN/a002_customer_processing_0.1</module>
+    <module>jobs/process/CMDB_New/IPVPN/a014_cmdb_rel_ci_processing_0.1</module>
   </modules>
   <properties>
     <talend.project.name>ODF</talend.project.name>
