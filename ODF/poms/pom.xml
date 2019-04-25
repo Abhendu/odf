@@ -11,6 +11,7 @@
   <modules>
     <module>code/routines</module>
     <module>jobs/process/cmdb_light_model/a00_master_job_0.1</module>
+    <module>jobs/process/cmdb_light_model/a01_get_input_file_0.1</module>
   </modules>
   <properties>
     <talend.project.name>ODF</talend.project.name>
