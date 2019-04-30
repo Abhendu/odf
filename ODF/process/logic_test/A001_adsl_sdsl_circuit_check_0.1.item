@@ -208,7 +208,7 @@
       <column comment="" key="false" length="-1" name="customer_name" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
       <outputTables name="consolidated_ciruit" sizeState="INTERMEDIATE">
         <mapperTableEntries expression="row1.name " name="circuit_name" nullable="true" type="id_String"/>
@@ -346,8 +346,9 @@
       <column comment="" key="false" length="-1" name="customer_name" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="544">
+  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="192" posY="576">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputDelimited_4"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
     <elementParameter field="FILE" name="FILENAME" value="&quot;D:/Talend-Studio-Cloud-7.0.1/Talend-Studio-20180411_1414-V7.0.1/workspace/in.csv&quot;"/>
     <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
@@ -420,8 +421,9 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tSplitRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="288" posY="544">
+  <node componentName="tSplitRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="384" posY="576">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tSplitRow_1"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="TABLE" name="COL_MAPPING">
       <elementValue elementRef="circuit_name" value="circuit_name"/>
       <elementValue elementRef="node" value="a_end_node"/>
@@ -440,8 +442,9 @@
       <column comment="" key="false" length="-1" name="customer_name" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="416" posY="544">
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="512" posY="576">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_2"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
     <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
@@ -467,7 +470,7 @@
       <column comment="" key="false" length="-1" name="location_name" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
       <outputTables name="consolidated_node" sizeState="INTERMEDIATE">
         <mapperTableEntries expression="row5.node_name " name="node_name" nullable="true" type="id_String"/>
@@ -498,8 +501,9 @@
       </inputTables>
     </nodeData>
   </node>
-  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="416" posY="416">
+  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="512" posY="448">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputDelimited_3"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
     <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/smolab/Desktop/code/input/node.csv&quot;"/>
     <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
@@ -584,8 +588,9 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="640" posY="544">
+  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="736" posY="576">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileOutputDelimited_2"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="CHECK" name="USESTREAM" value="false"/>
     <elementParameter field="TEXT" name="STREAMNAME" show="false" value="outputStream"/>
     <elementParameter field="FILE" name="FILENAME" value="&quot;D:/Talend-Studio-Cloud-7.0.1/Talend-Studio-20180411_1414-V7.0.1/workspace/out.csv&quot;"/>
@@ -641,18 +646,22 @@
   </connection>
   <connection connectorName="FLOW" label="row3" lineStyle="0" metaname="tFileInputDelimited_4" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_4" target="tSplitRow_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row3"/>
   </connection>
   <connection connectorName="FLOW" label="row4" lineStyle="0" metaname="tSplitRow_1" offsetLabelX="0" offsetLabelY="0" source="tSplitRow_1" target="tMap_2">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row4"/>
   </connection>
   <connection connectorName="FLOW" label="consolidated_node" lineStyle="0" metaname="consolidated_node" offsetLabelX="0" offsetLabelY="0" source="tMap_2" target="tFileOutputDelimited_2">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="consolidated_node"/>
   </connection>
   <connection connectorName="FLOW" label="row5" lineStyle="8" metaname="tFileInputDelimited_3" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_3" target="tMap_2">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row5"/>
   </connection>
   <subjob>
@@ -661,17 +670,18 @@
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
   <subjob>
+    <elementParameter field="CHECK" name="COLLAPSED" show="false" value="true"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputDelimited_4"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_cfb8cc09-ea4f-4587-adf3-9ad3c6cea7a0"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>gv1certzXyx9hY0bdAWvyZNEfvl2AIX3XXsCVWfMoPI7q6Y9Ufo+q5iVxLlK87jaFXwmGzixcFAt
-u5KzXRV5mw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_935a43ac-d1b0-4a5b-828f-cef1b8d908ea"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>e3ttJZxs2rjhRqfpmao7SGdTty5xzZWKsiq0TWK4DTZYjYZVYGExwN4UNw/oXt6tuVQ+e0jMjpqF
-Mp9gWjLRww==</DigestValue></Reference></SignedInfo><SignatureValue>VKOsmVTpGlBjj3RrQC3ZGpWJEAiTJqOsW5rCVPxxu1jGQ21F1xI9qk8hGrLNpH1u4fDgEPXzayu6
-29xGgKSRYPQIOEz8BspDTpwtOkl8bQfZVf4qwlfRmZkYtWbZVuOLkfs5qSdEPs6qcLXZemk1D+0F
-NuP9akc6LoJDKnxZMJArlZkHO39tOIzcDzUwFnEVUWXux3KXKxlL2ak544+sqd2GFeBHhVXd1Xpx
-bm9ZTh4hBqpiKnZ9v9mDVc+qSV+WAE3oxqglfU4/17LrqTNP1/7Ir1Djm7t7a1nbktpNjJvv9Zt2
-s4Af0I6W2S7xiPb3KFvVUctat65aSmlxm/TQNg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_f4d502d1-8187-4367-b889-129b00884efa"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>BZrVYRMNroRYRn6KfOSCrn84ZuE25VEPbg6BYDcUHHpCJ7KucaAmzgytJxAJkuPNpHKqMICQ8+yR
+m95A25MSDQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_d317a606-0938-46eb-98b8-efec10dae212"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>lU0VPZ9p9K4sCPPpkH04qEgMyhzPVm5itMVR0ZdfMdLCfO/EdMy74AFyMnNKyQq4WOmQVAf1xdRs
++cu0WUlOfA==</DigestValue></Reference></SignedInfo><SignatureValue>uVRsIz/njrwIQX4ZwtEXp++mZqx0P3zYzTmaOjtxGG/+snvbEh8sam5o9VXfRiMQ1zefn9+Qfz0w
+NzaIZRivLy1HKfZ6vUwLbBTavfbNiOt5NDe2UyN5Y+j33Gt3ySQ1lodRe9UUZ0oFQuT87W+RqYuR
+6LlvqSPfg5zp2db0crqePOCWMlyqZXNZoQkLtkUIkdAlyPLec9lujM9+J69uZRP85R4nU7rGVYwG
+//79JwQbA3BoG34wfTPSuaXdzZ9x0J8zY75uVPWZVaeKhzIAz0MRivQ1TzGghazXqOnQEt0Si+jL
+bi02kWUVUEYn2vUiozettB4aLlhhjjFkPGWFkg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -695,4 +705,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_935a43ac-d1b0-4a5b-828f-cef1b8d908ea" Target="#_cfb8cc09-ea4f-4587-adf3-9ad3c6cea7a0"><Timestamp>2019-04-30 13:32:33</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_d317a606-0938-46eb-98b8-efec10dae212" Target="#_f4d502d1-8187-4367-b889-129b00884efa"><Timestamp>2019-04-30 13:33:17</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
