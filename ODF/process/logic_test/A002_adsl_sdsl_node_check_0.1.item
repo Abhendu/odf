@@ -200,6 +200,62 @@
       <column comment="" key="false" length="-1" name="customer_name" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="480" posY="96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_1"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_FbhRoGtEEemfk9Nd3dcCeQ-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" show="false" value="0"/>
+    <elementParameter field="TEXT" name="JACCARD" show="false" value="0"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata name="consolidatednode">
+      <column comment="" key="false" length="-1" name="node_name" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="node_status" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="node_type" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="node_definition" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="device_function" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="location_name" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="circuit_name" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="bandwidth" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="customer_name" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties shellMaximized="true"/>
+      <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
+      <outputTables name="consolidatednode" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="row2.node_name " name="node_name" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.node_status " name="node_status" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.node_type " name="node_type" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.node_definition " name="node_definition" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.device_function " name="device_function" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.location_name " name="location_name" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.circuit_name " name="circuit_name" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.bandwidth " name="bandwidth" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.customer_name " name="customer_name" nullable="true" type="id_String"/>
+      </outputTables>
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row1" sizeState="INTERMEDIATE">
+        <mapperTableEntries name="circuit_name" nullable="true" type="id_String"/>
+        <mapperTableEntries name="node" nullable="true" type="id_String"/>
+        <mapperTableEntries name="bandwidth" nullable="true" type="id_String"/>
+        <mapperTableEntries name="customer_name" nullable="true" type="id_String"/>
+      </inputTables>
+      <inputTables activateCondensedTool="true" innerJoin="true" lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row2" sizeState="INTERMEDIATE">
+        <mapperTableEntries name="action" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.node " name="node_name" nullable="true" operator="=" type="id_String"/>
+        <mapperTableEntries name="node_status" nullable="true" type="id_String"/>
+        <mapperTableEntries name="node_type" nullable="true" type="id_String"/>
+        <mapperTableEntries name="node_definition" nullable="true" type="id_String"/>
+        <mapperTableEntries name="device_function" nullable="true" type="id_String"/>
+        <mapperTableEntries name="location_name" nullable="true" type="id_String"/>
+      </inputTables>
+    </nodeData>
+  </node>
   <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="480" posY="-32">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputDelimited_2"/>
     <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
@@ -286,64 +342,6 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="480" posY="96">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_1"/>
-    <elementParameter field="EXTERNAL" name="MAP" value=""/>
-    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
-    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
-    <elementParameter field="IMAGE" name="PREVIEW" value="_FbhRoGtEEemfk9Nd3dcCeQ-tMap_1-PREVIEW.bmp"/>
-    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
-    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
-    <elementParameter field="TEXT" name="LEVENSHTEIN" show="false" value="0"/>
-    <elementParameter field="TEXT" name="JACCARD" show="false" value="0"/>
-    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" show="false" value="false"/>
-    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
-    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="consolidated_node">
-      <column comment="" key="false" length="-1" name="node_name" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="circuit_name" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="node" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="bandwidth" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="customer_name" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="node_status" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="node_type" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="node_definition" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="device_function" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="location_name" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-    </metadata>
-    <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
-      <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
-      <outputTables name="consolidated_node" sizeState="INTERMEDIATE">
-        <mapperTableEntries expression="row5.node_name " name="node_name" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row4.circuit_name " name="circuit_name" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row4.node " name="node" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row4.bandwidth " name="bandwidth" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row4.customer_name " name="customer_name" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row5.node_status " name="node_status" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row5.node_type " name="node_type" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row5.node_definition " name="node_definition" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row5.device_function " name="device_function" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row5.location_name " name="location_name" nullable="true" type="id_String"/>
-      </outputTables>
-      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row4" sizeState="INTERMEDIATE">
-        <mapperTableEntries name="circuit_name" nullable="true" type="id_String"/>
-        <mapperTableEntries name="node" nullable="true" type="id_String"/>
-        <mapperTableEntries name="bandwidth" nullable="true" type="id_String"/>
-        <mapperTableEntries name="customer_name" nullable="true" type="id_String"/>
-      </inputTables>
-      <inputTables activateCondensedTool="true" innerJoin="true" lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row5" sizeState="INTERMEDIATE">
-        <mapperTableEntries name="action" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row4.node " name="node_name" nullable="true" operator="=" type="id_String"/>
-        <mapperTableEntries name="node_status" nullable="true" type="id_String"/>
-        <mapperTableEntries name="node_type" nullable="true" type="id_String"/>
-        <mapperTableEntries name="node_definition" nullable="true" type="id_String"/>
-        <mapperTableEntries name="device_function" nullable="true" type="id_String"/>
-        <mapperTableEntries name="location_name" nullable="true" type="id_String"/>
-      </inputTables>
-    </nodeData>
-  </node>
   <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="704" posY="96">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileOutputDelimited_1"/>
     <elementParameter field="CHECK" name="USESTREAM" value="false"/>
@@ -391,30 +389,31 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row3"/>
   </connection>
-  <connection connectorName="FLOW" label="row4" lineStyle="0" metaname="tSplitRow_1" offsetLabelX="0" offsetLabelY="0" source="tSplitRow_1" target="tMap_1">
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tSplitRow_1" offsetLabelX="0" offsetLabelY="0" source="tSplitRow_1" target="tMap_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row4"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
   </connection>
-  <connection connectorName="FLOW" label="row5" lineStyle="8" metaname="tFileInputDelimited_2" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_2" target="tMap_1">
+  <connection connectorName="FLOW" label="row2" lineStyle="8" metaname="tFileInputDelimited_2" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_2" target="tMap_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row5"/>
-  </connection>
-  <connection connectorName="FLOW" label="consolidated_node" lineStyle="0" metaname="consolidated_node" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tFileOutputDelimited_1">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="consolidated_node"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row2"/>
   </connection>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputDelimited_1"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_9164bb6c-7951-4389-a45b-e577bcf9d433"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>3BxMFGqDt+QIA6UuRa4Zf74eTOUDWI6dqUbZz5BfH70ZChJN0JjkGd4qNYTxKhH31x6tkEM757lQ
-bnQnxVDTPA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_f753b4ba-8476-478d-8fba-370a2c48d87e"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>ml5cVi68fnnw62673hNvJgk/jVKnRiRxI4sQGpo9/ubSr6FdGXHJKWk370M1/lrmE4WgRv5KxJFD
-C8fa2J8HiA==</DigestValue></Reference></SignedInfo><SignatureValue>t6eckTLCKSt9Y7rJXmZh4z4zQhS8ElCQUvg5psKAFjK+2EsklQ0GuIdITbGNEdIrl1yqG9fish4q
-W3d9KPE0bC7galg6m/3TOqocHXtFv9LhcbehNFgvOG5xP1gODJtMA5qa0WTwMFVHk1eXC8NcSBA/
-kGILi/qQDR4wrrzzfLD6oGXIbPBcMbsrrI3L5ug9sLO+bjB1cVP6T5W9stWTL7IApXF536QC1l0j
-h0y4eGT1IG4lKEwwXHXTMkvnFrazpYwjLCNb7bZl63i73YqD0bFpVgQv+4yymM1rQYfU522irR6s
-RQJSaadKCXAHxqbxn6qGYfcs+KbyYiURUbKFUw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileOutputDelimited_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_8c53c031-6ffc-4bcc-aea6-0433457e3244"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>SFJOm/1MI3Gieltct3IxfMHzosbbue1+Ff89cdfwfz0Ph7IPk/iJK0N4eSWHxZBY8WTh2ZnhqLFU
+R0OxI4ANxQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_b3970dcc-d9bc-492e-b56e-7e0da830171e"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>nynW+3OCKva8jnseZIyFYZ5nVFaszmiSQemy6rQyiv81l1J1nM8LTL4OKRhwQl4ZXZ524/nl4uK5
+lUAExkZ4zQ==</DigestValue></Reference></SignedInfo><SignatureValue>GJhvIONsJ41Qyqq6bQYixTxXM/8amut3q2RyWiY+yhPxCyeRaB+VPOFG7Yf9I9/g/lF22yXKxIbu
+7hD4vCIOgzSbZ3vw7NrvgrRPkRQEjeLj6G8ff1o+0dGDbIyD8m5jXoihJyzDJILu39rosV2Z91wg
+/z8R03wIY87XLzeI/4juQwYSHqMdbY12iWNGGjE8B50Z9PeH/HhS5jCTrByes3SVUsvkH1QlneFW
+xO2YBE6dyzobhfK3SV+K+//Xf4pJsub0sMTtUpPvqY9uHzYHno+AIzfEH/zInXfu278yu6DzV0Uc
+p/lrptGnIT1i+49CoEPWBhv+VTv20cwaR7zClw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -438,4 +437,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_f753b4ba-8476-478d-8fba-370a2c48d87e" Target="#_9164bb6c-7951-4389-a45b-e577bcf9d433"><Timestamp>2019-04-30 13:37:38</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_b3970dcc-d9bc-492e-b56e-7e0da830171e" Target="#_8c53c031-6ffc-4bcc-aea6-0433457e3244"><Timestamp>2019-04-30 13:39:07</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
