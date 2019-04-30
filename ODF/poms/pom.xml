@@ -34,7 +34,7 @@
     <module>jobs/process/CMDB_New/IPVPN/file_a002_customer_processing_0.1</module>
     <module>jobs/process/CMDB_New/IPVPN/a002_customer_processing_0.1</module>
     <module>jobs/process/CMDB_New/IPVPN/a014_cmdb_rel_ci_processing_0.1</module>
-    <module>jobs/process/logic_test/a001_adsl_sdsl_check_0.1</module>
+    <module>jobs/process/logic_test/a001_adsl_sdsl_circuit_check_0.1</module>
   </modules>
   <properties>
     <talend.project.name>ODF</talend.project.name>

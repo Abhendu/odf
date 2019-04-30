@@ -9,9 +9,9 @@
     <relativePath>../../../../</relativePath>
   </parent>
   <groupId>org.example.odf.job</groupId>
-  <artifactId>A001_adsl_sdsl_check</artifactId>
+  <artifactId>A001_adsl_sdsl_circuit_check</artifactId>
   <version>0.1.0</version>
-  <name>ODF A001_adsl_sdsl_check-0.1.0 (0.1,Job Designs)</name>
+  <name>ODF A001_adsl_sdsl_circuit_check-0.1.0 (0.1,Job Designs)</name>
   <properties>
     <output.resources.dir>${talend.job.name}/src/main/resources</output.resources.dir>
     <talend.job.applyContextToChildren>false</talend.job.applyContextToChildren>
@@ -19,11 +19,11 @@
     <current.int-resources.dir>${basedir}/src/main/resources</current.int-resources.dir>
     <talend.job.version>0.1</talend.job.version>
     <talend.project.name.lowercase>odf</talend.project.name.lowercase>
-    <talend.job.path>odf/a001_adsl_sdsl_check_0_1</talend.job.path>
+    <talend.job.path>odf/a001_adsl_sdsl_circuit_check_0_1</talend.job.path>
     <maven.build.timestamp.format>yyyy-MM-dd HHmmssSSS</maven.build.timestamp.format>
     <talend.project.name>ODF</talend.project.name>
     <talend.product.version>7.0.1.20180411_1414</talend.product.version>
-    <talend.job.finalName>a001_adsl_sdsl_check_0_1</talend.job.finalName>
+    <talend.job.finalName>a001_adsl_sdsl_circuit_check_0_1</talend.job.finalName>
     <talend.pigudf.groupid>org.example.odf.pigudf</talend.pigudf.groupid>
     <talend.routine.groupid>org.example.odf.code</talend.routine.groupid>
     <current.bundle.resources.dir>${basedir}/src/main/bundle-resources</current.bundle.resources.dir>
@@ -33,7 +33,7 @@
     <talend.job.stat>true</talend.job.stat>
     <talend.job.date>${maven.build.timestamp}</talend.job.date>
     <current.resources.dir>${basedir}/src/main/ext-resources</current.resources.dir>
-    <talend.job.name>A001_adsl_sdsl_check</talend.job.name>
+    <talend.job.name>A001_adsl_sdsl_circuit_check</talend.job.name>
     <talend.job.id>_NqL7AGsqEemfk9Nd3dcCeQ</talend.job.id>
     <talend.project.id>0</talend.project.id>
     <talend.job.framework></talend.job.framework>
