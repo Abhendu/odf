@@ -51,7 +51,7 @@
     <module>jobs/process/CMDB_New/IPVPN/file_a008_card_processing_0.1</module>
     <module>jobs/process/CMDB_New/IPVPN/file_a009_phy_port_processing_0.1</module>
     <module>jobs/process/CMDB_New/IPVPN/file_a014_access_processing_0.1</module>
-    <module>jobs/process/CMDB_New/IPVPN/a015_access_list_processing_0.1</module>
+    <module>jobs/process/CMDB_New/IPVPN/file_a015_access_list_processing_0.1</module>
   </modules>
   <properties>
     <talend.project.name>ODF</talend.project.name>
