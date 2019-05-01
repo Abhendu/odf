@@ -31,7 +31,7 @@
     <contextParameter comment="" name="file_service_input" prompt="file_service_input?" promptNeeded="false" repositoryContextId="_RpcG8DEjEemzV-Su763qjQ" type="id_String" value=""/>
     <contextParameter comment="" name="file_vnf_input" prompt="file_vnf_input?" promptNeeded="false" repositoryContextId="_RpcG8DEjEemzV-Su763qjQ" type="id_String" value=""/>
     <contextParameter comment="" name="file_zip_name" prompt="file_zip_name?" promptNeeded="false" repositoryContextId="_RpcG8DEjEemzV-Su763qjQ" type="id_String" value=""/>
-    <contextParameter comment="" name="job_start_time" prompt="job_start_time?" promptNeeded="false" repositoryContextId="_RpcG8DEjEemzV-Su763qjQ" type="id_String" value=""/>
+    <contextParameter comment="" name="job_start_time" prompt="job_start_time?" promptNeeded="false" type="id_String" value=""/>
     <contextParameter comment="" name="LAST_FILE_TIMESTAMP" prompt="LAST_FILE_TIMESTAMP?" promptNeeded="false" repositoryContextId="_RpcG8DEjEemzV-Su763qjQ" type="id_String" value=""/>
     <contextParameter comment="" name="odf_source" prompt="odf_source?" promptNeeded="false" repositoryContextId="_RpcG8DEjEemzV-Su763qjQ" type="id_String" value="&quot;CRAMER&quot;"/>
     <contextParameter comment="" name="proxy_host" prompt="proxy_host?" promptNeeded="false" repositoryContextId="_RpcG8DEjEemzV-Su763qjQ" type="id_String" value=""/>
@@ -130,7 +130,7 @@
     <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
     <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" show="false" value="false"/>
     <elementParameter field="CHECK" name="ON_FILES_FLAG" show="false" value="false"/>
-    <elementParameter field="DIRECTORY" name="FILE_PATH" show="false" value="&quot;C:/MyFolder/Talend_Cloud_Vodafone/Talend-Studio-Cloud-20180411_1414-V7.0.1/Talend-Studio-20180411_1414-V7.0.1/workspace/.metadata&quot;"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" show="false" value="&quot;D:/Talend-Studio-Cloud-7.0.1/Talend-Studio-20180411_1414-V7.0.1/workspace/.metadata&quot;"/>
     <elementParameter field="TEXT" name="FILENAME_STATS" show="false" value="&quot;stats_file.txt&quot;"/>
     <elementParameter field="TEXT" name="FILENAME_LOGS" show="false" value="&quot;logs_file.txt&quot;"/>
     <elementParameter field="TEXT" name="FILENAME_METTER" show="false" value="&quot;meter_file.txt&quot;"/>
@@ -496,7 +496,7 @@
       <column comment="" key="false" length="100" name="Access_Start_Physical_Port" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables name="Var" sizeState="INTERMEDIATE">
         <mapperTableEntries expression="Node.u_device_function==null?&quot;&quot;:Node.u_device_function " name="var_device_function" type="id_String"/>
         <mapperTableEntries expression="Node.ODF_KEY==null?&quot;&quot;:Node.ODF_KEY " name="var_node_odf_key" type="id_String"/>
@@ -868,7 +868,7 @@
       <column comment="" key="true" length="255" name="u_ethernet_switch_port" nullable="false" originalLength="255" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables name="Var" sizeState="INTERMEDIATE">
         <mapperTableEntries expression="phy_port_tab_1.ODF_KEY==null?&quot;&quot;:phy_port_tab_1.ODF_KEY " name="var_phy_portodf_key" type="id_String"/>
       </varTables>
@@ -3472,7 +3472,7 @@
       <additionalProperties key="Comment" value=""/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
       <outputTables name="ea_insert" sizeState="INTERMEDIATE">
         <mapperTableEntries expression="Access_ckt_file_data.Action_Type" name="ACTION_TYPE" nullable="true" type="id_String"/>
@@ -4273,7 +4273,7 @@
       <column comment="" key="false" length="-1" name="Source" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
       <outputTables name="access_output_final" sizeState="INTERMEDIATE">
         <mapperTableEntries expression="row1.ACTION_TYPE " name="ACTION_TYPE" nullable="true" type="id_String"/>
@@ -5493,13 +5493,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_b22a14a3-8155-49b7-8168-35c95a65b5bb"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>QC+yUkx9NL+geD2b0OCqNKIzTkxSfjs3pbhra7Of2FFTH0jf290VcGc5DYjaxjet1LJAXZWz1L6j
-hbF9rAl//g==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_8e01b44b-4c8f-4119-a7a7-ee3ffe2d6ee5"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>vNL011DPfsoXASWdOYKSG/KITLwhLO3pimYAWXjv78+F1HPY4SjglP9kTNA7OtVAarP/7BLayZp0
-3sYVchzzKA==</DigestValue></Reference></SignedInfo><SignatureValue>ZBIJPF5Oz/QOb2voFRMqhlduTEMuZEwOFaLdsq685wwWhvF03O/Jy6OU4qek+6OtfyEGmc/vUexT
-7u7YA7YwcZh5SnBoJSHbBjdOXm9MJqW/6P57ug6RnkQYeBheVeOexTp6Xh7ahge30dcF0SUsCp+Z
-jXMnD66hOcTuzbezxSI8IuRNHKp4ETmQyZ8s2Ycmw070VSAaphPCG50Sbavhf1a4+SHKhw47CS91
-9zKzpj5Zh0WMn7ZaZSyDmsmoeY9wq7Zkvilm8B3yaL9E8TtZDZ+9yWe1kj4RmZz6VhraMcnxJa2p
-ZWUDm1hWBf4b0S5JmogrNX4WpxcEmCG99glnAA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_c492c265-e82d-4476-963c-fff49c0e01ec"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>RE7CqhK316IXwU31R5FoL78FYAOfJ0Ewt6N2hYA4HdjKKOp+3rwS6vM5uD+pkJ7q2R7jisyNZ9SJ
+KM7++4tQCg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_9c286e3e-d8c5-4fd1-9281-a2b84468f340"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>ouoGzlJj89K2hBq46aJQ1lZo03did6hj+2SkJLQ4G8pDFYVjOI6rE5U0pxeLmx0Ko8ZEAbIPA8Z1
+mLdXCdrKCA==</DigestValue></Reference></SignedInfo><SignatureValue>KkTwYFrH7k8U+Dobm278RUWo8yG4NTTppJ4pdZykjTq4E0keRlQheZbeeBnwsvAPYuxOeC34daQY
+V5iACcitfCRBMVAEgF9SwRUz2qSO6pBmwIO4CjRCNM6xp2m6n/6QhOeUwUX2iJ95D0ESwTuSRcxy
+KoaG3TAyM2I2xuTh+nqujT+VIYvlC4LZSICjGFh3o4shPZtzW5XxCs+K9nQBd6BSvDDHOdPQ4h70
+G8b9VznGYTVeJNedzXxaKnbUkHIVtARWD2fZ0TQ/dVW6EIQNbuKE4MEVY9+ltvYvPw50XybvsTEF
+s0a/ZDTr+fXktHekmshiYWpds9UNVGNTpvcpoA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -5523,4 +5523,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_8e01b44b-4c8f-4119-a7a7-ee3ffe2d6ee5" Target="#_b22a14a3-8155-49b7-8168-35c95a65b5bb"><Timestamp>2019-05-01 08:54:50</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_9c286e3e-d8c5-4fd1-9281-a2b84468f340" Target="#_c492c265-e82d-4476-963c-fff49c0e01ec"><Timestamp>2019-05-01 08:56:03</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
