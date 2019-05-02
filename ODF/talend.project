@@ -892,6 +892,7 @@
       <relatedItems xmi:id="_HQ3Dm2v9Eemfk9Nd3dcCeQ" id="TalendDate" version="Latest" type="routine"/>
       <relatedItems xmi:id="_HQ3DnGv9Eemfk9Nd3dcCeQ" id="Mathematical" version="Latest" type="routine"/>
     </ItemsRelations>
+    <deletedFolders>process/CMDB_New/IPVPN</deletedFolders>
     <migrationTask xmi:id="_oFFuQGbREem97qk6meX9dA" id="org.talend.repository.localprovider.RemoveRoutineFolderTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>
     <migrationTask xmi:id="_oFFuQWbREem97qk6meX9dA" id="org.talend.repository.localprovider.model.migration.ChangeXmiSerialization" breaks="5.1.1" version="5.1.2" status="noimpact"/>
     <migrationTask xmi:id="_oFFuQmbREem97qk6meX9dA" id="org.talend.repository.model.migration.CleanFoldersMigrationTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>
