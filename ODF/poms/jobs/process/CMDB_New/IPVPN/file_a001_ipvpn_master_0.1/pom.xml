@@ -77,6 +77,11 @@
     </dependency>
     <dependency>
       <groupId>org.example.odf.job</groupId>
+      <artifactId>file_A019_circuit_file_join_processing</artifactId>
+      <version>0.1.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.example.odf.job</groupId>
       <artifactId>file_A006_olo_processing</artifactId>
       <version>0.1.0</version>
     </dependency>
@@ -87,7 +92,17 @@
     </dependency>
     <dependency>
       <groupId>org.example.odf.job</groupId>
+      <artifactId>file_A018_circuit_list_processing</artifactId>
+      <version>0.1.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.example.odf.job</groupId>
       <artifactId>file_A002_customer_processing</artifactId>
+      <version>0.1.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.example.odf.job</groupId>
+      <artifactId>file_A017_circuit_processing</artifactId>
       <version>0.1.0</version>
     </dependency>
     <dependency>
