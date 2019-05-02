@@ -39,6 +39,7 @@
     <module>jobs/process/CMDB_New/IPVPN/file_a008_card_processing_0.1</module>
     <module>jobs/process/CMDB_New/IPVPN/file_a016_access_file_join_processing_0.1</module>
     <module>jobs/process/CMDB_New/IPVPN/file_a020_technical_service_processing_0.1</module>
+    <module>jobs/process/CMDB_New/IPVPN/file_a001_ipvpn_master_0.1</module>
   </modules>
   <properties>
     <talend.project.name>ODF</talend.project.name>
