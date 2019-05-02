@@ -62,22 +62,27 @@
     </dependency>
     <dependency>
       <groupId>org.example.odf.job</groupId>
-      <artifactId>file_A004_qos_processing</artifactId>
-      <version>0.1.0</version>
-    </dependency>
-    <dependency>
-      <groupId>org.example.odf.job</groupId>
       <artifactId>file_A005_location_processing</artifactId>
       <version>0.1.0</version>
     </dependency>
     <dependency>
       <groupId>org.example.odf.job</groupId>
-      <artifactId>file_A002_customer_processing</artifactId>
+      <artifactId>file_A011_slot_processing</artifactId>
       <version>0.1.0</version>
     </dependency>
     <dependency>
       <groupId>org.example.odf.job</groupId>
-      <artifactId>file_A011_slot_processing</artifactId>
+      <artifactId>file_A006_olo_processing</artifactId>
+      <version>0.1.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.example.odf.job</groupId>
+      <artifactId>file_A004_qos_processing</artifactId>
+      <version>0.1.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.example.odf.job</groupId>
+      <artifactId>file_A002_customer_processing</artifactId>
       <version>0.1.0</version>
     </dependency>
     <dependency>
@@ -112,7 +117,12 @@
     </dependency>
     <dependency>
       <groupId>org.example.odf.job</groupId>
-      <artifactId>file_A006_olo_processing</artifactId>
+      <artifactId>file_A013_node_processing</artifactId>
+      <version>0.1.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.example.odf.job</groupId>
+      <artifactId>file_A014_access_processing</artifactId>
       <version>0.1.0</version>
     </dependency>
   </dependencies>
