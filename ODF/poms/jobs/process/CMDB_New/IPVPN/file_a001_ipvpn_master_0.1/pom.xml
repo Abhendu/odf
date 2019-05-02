@@ -82,12 +82,22 @@
     </dependency>
     <dependency>
       <groupId>org.example.odf.job</groupId>
+      <artifactId>file_A009_phy_port_processing</artifactId>
+      <version>0.1.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.example.odf.job</groupId>
       <artifactId>file_A003_vrf_processing</artifactId>
       <version>0.1.0</version>
     </dependency>
     <dependency>
       <groupId>org.example.odf.job</groupId>
       <artifactId>file_A007_shelf_processing</artifactId>
+      <version>0.1.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.example.odf.job</groupId>
+      <artifactId>file_A010_interface_processing</artifactId>
       <version>0.1.0</version>
     </dependency>
     <dependency>
