@@ -23,7 +23,7 @@
     <contextParameter comment="" name="file_qos_input" prompt="file_qos_input?" promptNeeded="false" repositoryContextId="_RpcG8DEjEemzV-Su763qjQ" type="id_String" value=""/>
     <contextParameter comment="" name="file_service_input" prompt="file_service_input?" promptNeeded="false" repositoryContextId="_RpcG8DEjEemzV-Su763qjQ" type="id_String" value=""/>
     <contextParameter comment="" name="file_vnf_input" prompt="file_vnf_input?" promptNeeded="false" repositoryContextId="_RpcG8DEjEemzV-Su763qjQ" type="id_String" value=""/>
-    <contextParameter comment="" name="job_start_time" prompt="job_start_time?" promptNeeded="false" repositoryContextId="_RpcG8DEjEemzV-Su763qjQ" type="id_String" value=""/>
+    <contextParameter comment="" name="job_start_time" prompt="job_start_time?" promptNeeded="false" type="id_String" value=""/>
     <contextParameter comment="" name="odf_source" prompt="odf_source?" promptNeeded="false" repositoryContextId="_RpcG8DEjEemzV-Su763qjQ" type="id_String" value="&quot;CRAMER&quot;"/>
     <contextParameter comment="" name="proxy_host" prompt="proxy_host?" promptNeeded="false" repositoryContextId="_RpcG8DEjEemzV-Su763qjQ" type="id_String" value=""/>
     <contextParameter comment="" name="proxy_port" prompt="proxy_port?" promptNeeded="false" repositoryContextId="_RpcG8DEjEemzV-Su763qjQ" type="id_String" value=""/>
@@ -73,6 +73,7 @@
     <contextParameter comment="" name="file_pattern" prompt="file_pattern?" promptNeeded="false" repositoryContextId="_RpcG8DEjEemzV-Su763qjQ" type="id_String" value=""/>
     <contextParameter comment="" name="file_zip_name" prompt="file_zip_name?" promptNeeded="false" repositoryContextId="_RpcG8DEjEemzV-Su763qjQ" type="id_String" value=""/>
     <contextParameter comment="" name="LAST_FILE_TIMESTAMP" prompt="LAST_FILE_TIMESTAMP?" promptNeeded="false" repositoryContextId="_RpcG8DEjEemzV-Su763qjQ" type="id_String" value=""/>
+    <contextParameter comment="" name="job_start_time_for_db" prompt="job_start_time_for_db?" promptNeeded="false" repositoryContextId="_RpcG8DEjEemzV-Su763qjQ" type="id_String" value=""/>
   </context>
   <parameters>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
@@ -130,7 +131,7 @@
     <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
     <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" show="false" value="false"/>
     <elementParameter field="CHECK" name="ON_FILES_FLAG" show="false" value="false"/>
-    <elementParameter field="DIRECTORY" name="FILE_PATH" show="false" value="&quot;C:/MyFolder/Talend_Cloud_Vodafone/Talend-Studio-Cloud-20180411_1414-V7.0.1/Talend-Studio-20180411_1414-V7.0.1/workspace/.metadata&quot;"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" show="false" value="&quot;D:/Talend-Studio-Cloud-7.0.1/Talend-Studio-20180411_1414-V7.0.1/workspace/.metadata&quot;"/>
     <elementParameter field="TEXT" name="FILENAME_STATS" show="false" value="&quot;stats_file.txt&quot;"/>
     <elementParameter field="TEXT" name="FILENAME_LOGS" show="false" value="&quot;logs_file.txt&quot;"/>
     <elementParameter field="TEXT" name="FILENAME_METTER" show="false" value="&quot;meter_file.txt&quot;"/>
@@ -843,7 +844,7 @@
       <column comment="" key="false" length="-1" name="ipapp_service_type" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
       <outputTables activateExpressionFilter="true" expressionFilter="service_model_data.refer_to_ipapp_flag.equalsIgnoreCase(&quot;No&quot;)" name="BS_insert" sizeState="INTERMEDIATE">
         <mapperTableEntries expression="service_model_data.Action_Type" name="Action_Type" nullable="true" type="id_String"/>
@@ -897,11 +898,8 @@
         <mapperTableEntries name="VRF" nullable="true" type="id_String"/>
         <mapperTableEntries name="Customer_Name" nullable="true" type="id_String"/>
         <mapperTableEntries name="Service_Model" nullable="true" type="id_String"/>
-        <mapperTableEntries name="bp_to_be_instantiated" nullable="true" type="id_String"/>
         <mapperTableEntries name="product" type="id_String"/>
         <mapperTableEntries name="u_circuit_type" nullable="true" type="id_String"/>
-        <mapperTableEntries name="u_ts_operational_status" nullable="true" type="id_String"/>
-        <mapperTableEntries name="u_cct_based_ts" nullable="true" type="id_String"/>
         <mapperTableEntries name="refer_to_ipapp_flag" nullable="true" type="id_String"/>
         <mapperTableEntries name="ipapp_service_type" nullable="true" type="id_String"/>
       </inputTables>
@@ -918,11 +916,8 @@
         <mapperTableEntries name="VRF" nullable="true" type="id_String"/>
         <mapperTableEntries name="Customer_Name" nullable="true" type="id_String"/>
         <mapperTableEntries name="Service_Model" nullable="true" type="id_String"/>
-        <mapperTableEntries name="bp_to_be_instantiated" nullable="true" type="id_String"/>
         <mapperTableEntries name="product" type="id_String"/>
         <mapperTableEntries name="u_circuit_type" nullable="true" type="id_String"/>
-        <mapperTableEntries name="u_ts_operational_status" nullable="true" type="id_String"/>
-        <mapperTableEntries name="u_cct_based_ts" nullable="true" type="id_String"/>
         <mapperTableEntries name="refer_to_ipapp_flag" nullable="true" type="id_String"/>
         <mapperTableEntries name="ipapp_service_type" nullable="true" type="id_String"/>
       </inputTables>
@@ -2418,8 +2413,6 @@
     <elementParameter field="CHECK" name="START" show="false" value="false"/>
     <elementParameter field="CLOSED_LIST" name="PROCESS_TYPE_VERSION" value="Latest"/>
     <elementParameter field="TEXT" name="LABEL" value="map_service_file_to_refServModTab"/>
-    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <elementParameter field="CHECK" name="INFORMATION" value="false"/>
     <elementParameter field="MEMO" name="COMMENT" value=""/>
     <metadata connector="OUTPUT_1" name="OUTPUT_1">
@@ -2435,11 +2428,8 @@
       <column comment="" key="false" length="100" name="VRF" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="255" name="Customer_Name" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="100" name="Service_Model" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="bp_to_be_instantiated" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="40" name="product" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="40" name="u_circuit_type" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="u_ts_operational_status" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="u_cct_based_ts" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="refer_to_ipapp_flag" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="ipapp_service_type" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
     </metadata>
@@ -3156,13 +3146,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_fd4b8976-2eba-4d0e-8726-7cdf4d287785"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>qdBU9pA66KzFKzNnq6RKRwg9BvFZeR8I+3Ig1yiWkv7gZ21wsM0XvjrTfZ3pPK4nGXuTiF9s6wcu
-ksaF3WTWfA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_34e3fc5b-1b17-4cb0-9ebe-409f1d78f1b3"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>5mmDck04889gSdIz+zyzbA7b8dhBqDhlnDYz3+XrCoLYU2JpymWoi13hBzX2QDOQB/ptj9VkHO+H
-jBdTsXlyfw==</DigestValue></Reference></SignedInfo><SignatureValue>OwCd47DBRoRAr6Nr4Y+22suVfShdQU+9Di8np4ZBJfyqad3knFgccitfQLbhuWzWxDCbyxhxWd56
-4bwA1jMBNmTGtd8epv1NQg2KfqQ38815cJFjA99mAG22nXGmC5Bi59mUVRGMvkC01E+aruRSjws/
-o0d81/yzyrYPiC1yOELz2CP27ywWaeNQL+aAQUvqPMAgRI3KURtZYYGmHRu0C7HYwE9K70s6h2Tg
-nYvab8/RHwIgV/QkpJD/hbTwZcnIZyeIGYOBLBKzPqLkWZwyvhbO3Q0NVYpe9xXmf6qMLO3Lt1Cf
-p7/IINvb2qFodMVxGrdq/EabWx+kWxRHIDfL5w==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_fb61fabb-db17-476d-bea2-a9bc406931e1"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>jKr5bPT6/zZK9wayZZetAOnb3mFJG0M2BsqNA4YKVCufDwXCOG8X3VDfJJCYottxdkaZ5Zs0jmeg
+JDZPgrRQYQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_7337bbd5-8d6c-498d-b2cf-c72636b960f4"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>kxL1KDpDRsYzKjrsqaIelAlAP/l06uAJGyiruIyfZ2v8XAobfOv1E11FXQTQz6mTbs2AgeldaXDM
+Aam/GuGaSA==</DigestValue></Reference></SignedInfo><SignatureValue>LXheo4KY/G36tBgWOTwMqa8oBOpjpe7xzWr67nBJfqoPBQ9zWd3b/TEVMZcsbETtc4S9F3uBlmJf
+m80gshVCUKnPmPjnRYdU8M4EOeoFHcLsO4UYGkcuNhuihz6Y2QflmPd0kBkae5xCMBpvdkuBkbD/
+nS8w5YV9OxTQ7XEDqhdUlkZUynekqsAxsMTRQVfJ+iEZzLvVbLZ+QVNiq9TlUeRTbwH0ZiWw4ZrK
+qeLMDai0kXOJDcv8GMzN3VtQuHThFvNAztTHtf8t1jgI9evUShFzrdHsANmNItBTcf9C4nVvaNQ8
+NsBpBclJsflPDF5MmmBUItRTQuO8gwD8w92xQg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -3186,4 +3176,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_34e3fc5b-1b17-4cb0-9ebe-409f1d78f1b3" Target="#_fd4b8976-2eba-4d0e-8726-7cdf4d287785"><Timestamp>2019-05-02 13:02:42</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_7337bbd5-8d6c-498d-b2cf-c72636b960f4" Target="#_fb61fabb-db17-476d-bea2-a9bc406931e1"><Timestamp>2019-05-02 13:23:52</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
