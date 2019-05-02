@@ -82,6 +82,11 @@
     </dependency>
     <dependency>
       <groupId>org.example.odf.job</groupId>
+      <artifactId>file_A012_vnf_processing</artifactId>
+      <version>0.1.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.example.odf.job</groupId>
       <artifactId>file_A008_card_processing</artifactId>
       <version>0.1.0</version>
     </dependency>
