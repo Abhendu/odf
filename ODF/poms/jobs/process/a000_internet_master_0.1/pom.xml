@@ -61,80 +61,10 @@
       <version>7.0.1</version>
     </dependency>
     <dependency>
-      <groupId>org.example.odf.job</groupId>
-      <artifactId>A001_file_extraction</artifactId>
-      <version>0.1.0</version>
-    </dependency>
-    <dependency>
-      <groupId>org.example.odf.job</groupId>
-      <artifactId>A002_customer_processing</artifactId>
-      <version>0.1.0</version>
-    </dependency>
-    <dependency>
-      <groupId>org.example.odf.job</groupId>
-      <artifactId>A012_technical_service_processing</artifactId>
-      <version>0.1.0</version>
-    </dependency>
-    <dependency>
-      <groupId>org.example.odf.job</groupId>
-      <artifactId>A010_access_processing</artifactId>
-      <version>0.1.0</version>
-    </dependency>
-    <dependency>
-      <groupId>org.example.odf.job</groupId>
-      <artifactId>A011_circuit_processing</artifactId>
-      <version>0.1.0</version>
-    </dependency>
-    <dependency>
       <groupId>org.example.odf.joblet</groupId>
       <artifactId>prejob</artifactId>
       <version>0.1.0</version>
       <type>pom</type>
-    </dependency>
-    <dependency>
-      <groupId>org.example.odf.job</groupId>
-      <artifactId>A0031_vrf_processing_internet</artifactId>
-      <version>0.1.0</version>
-    </dependency>
-    <dependency>
-      <groupId>org.example.odf.job</groupId>
-      <artifactId>A005_location_processing</artifactId>
-      <version>0.1.0</version>
-    </dependency>
-    <dependency>
-      <groupId>org.example.odf.job</groupId>
-      <artifactId>A014_cmdb_rel_ci_processing</artifactId>
-      <version>0.1.0</version>
-    </dependency>
-    <dependency>
-      <groupId>org.example.odf.job</groupId>
-      <artifactId>A013_site_processing</artifactId>
-      <version>0.1.0</version>
-    </dependency>
-    <dependency>
-      <groupId>org.example.odf.job</groupId>
-      <artifactId>A009_node_processing</artifactId>
-      <version>0.1.0</version>
-    </dependency>
-    <dependency>
-      <groupId>org.example.odf.job</groupId>
-      <artifactId>A015_bp_instantiation_processing</artifactId>
-      <version>0.1.0</version>
-    </dependency>
-    <dependency>
-      <groupId>org.example.odf.job</groupId>
-      <artifactId>A007_other_ci_processing</artifactId>
-      <version>0.1.0</version>
-    </dependency>
-    <dependency>
-      <groupId>org.example.odf.job</groupId>
-      <artifactId>A008_vnf_processing</artifactId>
-      <version>0.1.0</version>
-    </dependency>
-    <dependency>
-      <groupId>org.example.odf.job</groupId>
-      <artifactId>A006_olo_processing</artifactId>
-      <version>0.1.0</version>
     </dependency>
   </dependencies>
   <build>

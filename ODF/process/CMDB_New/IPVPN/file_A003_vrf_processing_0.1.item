@@ -1,78 +1,78 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:TalendXMLMap="http://www.talend.org/xmlmap" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" defaultContext="Default" jobType="Standard" xmi:version="2.0">
   <context confirmationNeeded="false" name="Default">
-    <contextParameter comment="" name="CFS_DIR" prompt="CFS_DIR?" promptNeeded="false" repositoryContextId="_RpcG8DEjEemzV-Su763qjQ" type="id_String" value=""/>
-    <contextParameter comment="" name="CFS_FILE_NAME" prompt="CFS_FILE_NAME?" promptNeeded="false" repositoryContextId="_RpcG8DEjEemzV-Su763qjQ" type="id_String" value=""/>
-    <contextParameter comment="" name="CFS_IP_ADDR" prompt="CFS_IP_ADDR?" promptNeeded="false" repositoryContextId="_RpcG8DEjEemzV-Su763qjQ" type="id_String" value=""/>
-    <contextParameter comment="" name="CFS_USER_ID" prompt="CFS_USER_ID?" promptNeeded="false" repositoryContextId="_RpcG8DEjEemzV-Su763qjQ" type="id_String" value=""/>
-    <contextParameter comment="" name="CONTROLLER_FILE" prompt="CONTROLLER_FILE?" promptNeeded="false" repositoryContextId="_RpcG8DEjEemzV-Su763qjQ" type="id_String" value=""/>
-    <contextParameter comment="" name="CURRENT_FILE_TIMESTAMP" prompt="CURRENT_FILE_TIMESTAMP?" promptNeeded="false" repositoryContextId="_RpcG8DEjEemzV-Su763qjQ" type="id_String" value=""/>
-    <contextParameter comment="" name="db_hostname" prompt="db_hostname?" promptNeeded="false" repositoryContextId="_RpcG8DEjEemzV-Su763qjQ" type="id_String" value="&quot;localhost&quot;"/>
-    <contextParameter comment="" name="db_password" prompt="db_password?" promptNeeded="false" repositoryContextId="_RpcG8DEjEemzV-Su763qjQ" type="id_Password" value="NZNgK6DuncI="/>
-    <contextParameter comment="" name="db_port" prompt="db_port?" promptNeeded="false" repositoryContextId="_RpcG8DEjEemzV-Su763qjQ" type="id_String" value="&quot;3306&quot;"/>
-    <contextParameter comment="" name="db_schema_name" prompt="db_schema_name?" promptNeeded="false" repositoryContextId="_RpcG8DEjEemzV-Su763qjQ" type="id_String" value="&quot;cramer_ipvpn&quot;"/>
-    <contextParameter comment="" name="db_username" prompt="db_username?" promptNeeded="false" repositoryContextId="_RpcG8DEjEemzV-Su763qjQ" type="id_String" value="&quot;root&quot;"/>
-    <contextParameter comment="" name="error_file_directory" prompt="error_file_directory?" promptNeeded="false" repositoryContextId="_RpcG8DEjEemzV-Su763qjQ" type="id_String" value=""/>
-    <contextParameter comment="" name="error_file_name" prompt="error_file_name?" promptNeeded="false" repositoryContextId="_RpcG8DEjEemzV-Su763qjQ" type="id_String" value=""/>
+    <contextParameter comment="" name="CFS_DIR" prompt="CFS_DIR?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="CFS_FILE_NAME" prompt="CFS_FILE_NAME?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="CFS_IP_ADDR" prompt="CFS_IP_ADDR?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="CFS_USER_ID" prompt="CFS_USER_ID?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="CONTROLLER_FILE" prompt="CONTROLLER_FILE?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="CURRENT_FILE_TIMESTAMP" prompt="CURRENT_FILE_TIMESTAMP?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="db_hostname" prompt="db_hostname?" promptNeeded="false" type="id_String" value="&quot;localhost&quot;"/>
+    <contextParameter comment="" name="db_password" prompt="db_password?" promptNeeded="false" type="id_Password" value="NZNgK6DuncI="/>
+    <contextParameter comment="" name="db_port" prompt="db_port?" promptNeeded="false" type="id_String" value="&quot;3306&quot;"/>
+    <contextParameter comment="" name="db_schema_name" prompt="db_schema_name?" promptNeeded="false" type="id_String" value="&quot;cramer_ipvpn&quot;"/>
+    <contextParameter comment="" name="db_username" prompt="db_username?" promptNeeded="false" type="id_String" value="&quot;root&quot;"/>
+    <contextParameter comment="" name="error_file_directory" prompt="error_file_directory?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="error_file_name" prompt="error_file_name?" promptNeeded="false" type="id_String" value=""/>
     <contextParameter comment="" name="file_circuit_input" prompt="file_circuit_input?" promptNeeded="false" repositoryContextId="_RpcG8DEjEemzV-Su763qjQ" type="id_String" value=""/>
     <contextParameter comment="" name="file_customer_input" prompt="file_customer_input?" promptNeeded="false" repositoryContextId="_RpcG8DEjEemzV-Su763qjQ" type="id_String" value=""/>
-    <contextParameter comment="" name="file_directory_error" prompt="file_directory_error?" promptNeeded="false" repositoryContextId="_RpcG8DEjEemzV-Su763qjQ" type="id_String" value=""/>
-    <contextParameter comment="" name="file_directory_expanded" prompt="file_directory_expanded?" promptNeeded="false" repositoryContextId="_RpcG8DEjEemzV-Su763qjQ" type="id_String" value="&quot;D:/CMDB_files_expanded&quot;"/>
-    <contextParameter comment="" name="file_directory_zip" prompt="file_directory_zip?" promptNeeded="false" repositoryContextId="_RpcG8DEjEemzV-Su763qjQ" type="id_String" value="&quot;D:\CMDB&quot;"/>
+    <contextParameter comment="" name="file_directory_error" prompt="file_directory_error?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="file_directory_expanded" prompt="file_directory_expanded?" promptNeeded="false" repositoryContextId="_RpcG8DEjEemzV-Su763qjQ" type="id_String" value=""/>
+    <contextParameter comment="" name="file_directory_zip" prompt="file_directory_zip?" promptNeeded="false" type="id_String" value="&quot;D:\CMDB&quot;"/>
     <contextParameter comment="" name="file_ea_input" prompt="file_ea_input?" promptNeeded="false" repositoryContextId="_RpcG8DEjEemzV-Su763qjQ" type="id_String" value=""/>
-    <contextParameter comment="" name="file_ipapp_input" prompt="file_ipapp_input?" promptNeeded="false" repositoryContextId="_RpcG8DEjEemzV-Su763qjQ" type="id_String" value=""/>
+    <contextParameter comment="" name="file_ipapp_input" prompt="file_ipapp_input?" promptNeeded="false" type="id_String" value=""/>
     <contextParameter comment="" name="file_location_input" prompt="file_location_input?" promptNeeded="false" repositoryContextId="_RpcG8DEjEemzV-Su763qjQ" type="id_String" value=""/>
-    <contextParameter comment="Please provide the file name with path" name="file_location_properties_name" prompt="file_location_properties_name?" promptNeeded="false" repositoryContextId="_RpcG8DEjEemzV-Su763qjQ" type="id_String" value="&quot;C:/Users/KumarS2/Desktop/CMDB/config_files_for_jobs/ipvpn_context.properties&quot;"/>
-    <contextParameter comment="" name="file_name_error" prompt="file_name_error?" promptNeeded="false" repositoryContextId="_RpcG8DEjEemzV-Su763qjQ" type="id_String" value=""/>
+    <contextParameter comment="Please provide the file name with path" name="file_location_properties_name" prompt="file_location_properties_name?" promptNeeded="false" type="id_String" value="&quot;C:/Users/KumarS2/Desktop/CMDB/config_files_for_jobs/ipvpn_context.properties&quot;"/>
+    <contextParameter comment="" name="file_name_error" prompt="file_name_error?" promptNeeded="false" type="id_String" value=""/>
     <contextParameter comment="" name="file_node_input" prompt="file_node_input?" promptNeeded="false" repositoryContextId="_RpcG8DEjEemzV-Su763qjQ" type="id_String" value=""/>
     <contextParameter comment="" name="file_olo_input" prompt="file_olo_input?" promptNeeded="false" repositoryContextId="_RpcG8DEjEemzV-Su763qjQ" type="id_String" value=""/>
     <contextParameter comment="" name="file_output_directory" prompt="file_output_directory?" promptNeeded="false" repositoryContextId="_RpcG8DEjEemzV-Su763qjQ" type="id_String" value=""/>
-    <contextParameter comment="" name="file_pattern" prompt="file_pattern?" promptNeeded="false" repositoryContextId="_RpcG8DEjEemzV-Su763qjQ" type="id_String" value=""/>
+    <contextParameter comment="" name="file_pattern" prompt="file_pattern?" promptNeeded="false" type="id_String" value=""/>
     <contextParameter comment="" name="file_qos_input" prompt="file_qos_input?" promptNeeded="false" repositoryContextId="_RpcG8DEjEemzV-Su763qjQ" type="id_String" value=""/>
     <contextParameter comment="" name="file_service_input" prompt="file_service_input?" promptNeeded="false" repositoryContextId="_RpcG8DEjEemzV-Su763qjQ" type="id_String" value=""/>
     <contextParameter comment="" name="file_vnf_input" prompt="file_vnf_input?" promptNeeded="false" repositoryContextId="_RpcG8DEjEemzV-Su763qjQ" type="id_String" value=""/>
-    <contextParameter comment="" name="file_zip_name" prompt="file_zip_name?" promptNeeded="false" repositoryContextId="_RpcG8DEjEemzV-Su763qjQ" type="id_String" value=""/>
+    <contextParameter comment="" name="file_zip_name" prompt="file_zip_name?" promptNeeded="false" type="id_String" value=""/>
     <contextParameter comment="" name="job_start_time" prompt="job_start_time?" promptNeeded="false" type="id_String" value=""/>
-    <contextParameter comment="" name="LAST_FILE_TIMESTAMP" prompt="LAST_FILE_TIMESTAMP?" promptNeeded="false" repositoryContextId="_RpcG8DEjEemzV-Su763qjQ" type="id_String" value=""/>
-    <contextParameter comment="" name="odf_source" prompt="odf_source?" promptNeeded="false" repositoryContextId="_RpcG8DEjEemzV-Su763qjQ" type="id_String" value="&quot;CRAMER&quot;"/>
-    <contextParameter comment="" name="proxy_host" prompt="proxy_host?" promptNeeded="false" repositoryContextId="_RpcG8DEjEemzV-Su763qjQ" type="id_String" value=""/>
-    <contextParameter comment="" name="proxy_port" prompt="proxy_port?" promptNeeded="false" repositoryContextId="_RpcG8DEjEemzV-Su763qjQ" type="id_String" value=""/>
-    <contextParameter comment="" name="ref_table_name_blueprint" prompt="ref_table_name_blueprint?" promptNeeded="false" repositoryContextId="_RpcG8DEjEemzV-Su763qjQ" type="id_String" value=""/>
-    <contextParameter comment="" name="ref_table_name_circuit_customer_map" prompt="ref_table_name_circuit_customer_map?" promptNeeded="false" repositoryContextId="_RpcG8DEjEemzV-Su763qjQ" type="id_String" value=""/>
-    <contextParameter comment="" name="ref_table_name_contract" prompt="ref_table_name_contract?" promptNeeded="false" repositoryContextId="_RpcG8DEjEemzV-Su763qjQ" type="id_String" value=""/>
-    <contextParameter comment="" name="ref_table_name_pop_tier" prompt="ref_table_name_pop_tier?" promptNeeded="false" repositoryContextId="_RpcG8DEjEemzV-Su763qjQ" type="id_String" value=""/>
-    <contextParameter comment="" name="ref_table_name_product" prompt="ref_table_name_product?" promptNeeded="false" repositoryContextId="_RpcG8DEjEemzV-Su763qjQ" type="id_String" value=""/>
-    <contextParameter comment="" name="ref_table_name_service_model" prompt="ref_table_name_service_model?" promptNeeded="false" repositoryContextId="_RpcG8DEjEemzV-Su763qjQ" type="id_String" value=""/>
-    <contextParameter comment="" name="ref_table_name_u_account_alias" prompt="ref_table_name_u_account_alias?" promptNeeded="false" repositoryContextId="_RpcG8DEjEemzV-Su763qjQ" type="id_String" value=""/>
-    <contextParameter comment="" name="ref_table_name_uk_business_service" prompt="ref_table_name_uk_business_service?" promptNeeded="false" repositoryContextId="_RpcG8DEjEemzV-Su763qjQ" type="id_String" value=""/>
-    <contextParameter comment="" name="ref_table_name_uk_country" prompt="ref_table_name_uk_country?" promptNeeded="false" repositoryContextId="_RpcG8DEjEemzV-Su763qjQ" type="id_String" value=""/>
-    <contextParameter comment="" name="ref_table_name_uk_device_func_alias" prompt="ref_table_name_uk_device_func_alias?" promptNeeded="false" repositoryContextId="_RpcG8DEjEemzV-Su763qjQ" type="id_String" value=""/>
-    <contextParameter comment="" name="ref_table_name_uk_device_func_device" prompt="ref_table_name_uk_device_func_device?" promptNeeded="false" repositoryContextId="_RpcG8DEjEemzV-Su763qjQ" type="id_String" value=""/>
-    <contextParameter comment="" name="ref_table_name_uk_itsm_enabled_customer" prompt="ref_table_name_uk_itsm_enabled_customer?" promptNeeded="false" repositoryContextId="_RpcG8DEjEemzV-Su763qjQ" type="id_String" value=""/>
-    <contextParameter comment="" name="ref_table_name_uk_product_default_bp" prompt="ref_table_name_uk_product_default_bp?" promptNeeded="false" repositoryContextId="_RpcG8DEjEemzV-Su763qjQ" type="id_String" value=""/>
-    <contextParameter comment="" name="sn_login" prompt="sn_login?" promptNeeded="false" repositoryContextId="_RpcG8DEjEemzV-Su763qjQ" type="id_String" value=""/>
-    <contextParameter comment="" name="sn_password" prompt="sn_password?" promptNeeded="false" repositoryContextId="_RpcG8DEjEemzV-Su763qjQ" type="id_String" value=""/>
-    <contextParameter comment="" name="sn_url" prompt="sn_url?" promptNeeded="false" repositoryContextId="_RpcG8DEjEemzV-Su763qjQ" type="id_String" value=""/>
-    <contextParameter comment="" name="table_name_access" prompt="table_name_access?" promptNeeded="false" repositoryContextId="_RpcG8DEjEemzV-Su763qjQ" type="id_String" value=""/>
-    <contextParameter comment="" name="table_name_card" prompt="table_name_card?" promptNeeded="false" repositoryContextId="_RpcG8DEjEemzV-Su763qjQ" type="id_String" value=""/>
-    <contextParameter comment="" name="table_name_circuit" prompt="table_name_circuit?" promptNeeded="false" repositoryContextId="_RpcG8DEjEemzV-Su763qjQ" type="id_String" value=""/>
-    <contextParameter comment="" name="table_name_cmdb_rel_ci" prompt="table_name_cmdb_rel_ci?" promptNeeded="false" repositoryContextId="_RpcG8DEjEemzV-Su763qjQ" type="id_String" value=""/>
-    <contextParameter comment="" name="table_name_customer" prompt="table_name_customer?" promptNeeded="false" repositoryContextId="_RpcG8DEjEemzV-Su763qjQ" type="id_String" value=""/>
-    <contextParameter comment="" name="table_name_interface" prompt="table_name_interface?" promptNeeded="false" repositoryContextId="_RpcG8DEjEemzV-Su763qjQ" type="id_String" value=""/>
-    <contextParameter comment="" name="table_name_ipapp" prompt="table_name_ipapp?" promptNeeded="false" repositoryContextId="_RpcG8DEjEemzV-Su763qjQ" type="id_String" value=""/>
-    <contextParameter comment="" name="table_name_location" prompt="table_name_location?" promptNeeded="false" repositoryContextId="_RpcG8DEjEemzV-Su763qjQ" type="id_String" value=""/>
-    <contextParameter comment="" name="table_name_node" prompt="table_name_node?" promptNeeded="false" repositoryContextId="_RpcG8DEjEemzV-Su763qjQ" type="id_String" value=""/>
-    <contextParameter comment="" name="table_name_olo" prompt="table_name_olo?" promptNeeded="false" repositoryContextId="_RpcG8DEjEemzV-Su763qjQ" type="id_String" value=""/>
-    <contextParameter comment="" name="table_name_physical_port" prompt="table_name_physical_port?" promptNeeded="false" repositoryContextId="_RpcG8DEjEemzV-Su763qjQ" type="id_String" value=""/>
-    <contextParameter comment="" name="table_name_qos" prompt="table_name_qos?" promptNeeded="false" repositoryContextId="_RpcG8DEjEemzV-Su763qjQ" type="id_String" value=""/>
-    <contextParameter comment="" name="table_name_shelf" prompt="table_name_shelf?" promptNeeded="false" repositoryContextId="_RpcG8DEjEemzV-Su763qjQ" type="id_String" value=""/>
-    <contextParameter comment="" name="table_name_site" prompt="table_name_site?" promptNeeded="false" repositoryContextId="_RpcG8DEjEemzV-Su763qjQ" type="id_String" value=""/>
-    <contextParameter comment="" name="table_name_slot" prompt="table_name_slot?" promptNeeded="false" repositoryContextId="_RpcG8DEjEemzV-Su763qjQ" type="id_String" value=""/>
-    <contextParameter comment="" name="table_name_technical_service" prompt="table_name_technical_service?" promptNeeded="false" repositoryContextId="_RpcG8DEjEemzV-Su763qjQ" type="id_String" value=""/>
-    <contextParameter comment="" name="table_name_uk_bp_instantiation" prompt="table_name_uk_bp_instantiation?" promptNeeded="false" repositoryContextId="_RpcG8DEjEemzV-Su763qjQ" type="id_String" value=""/>
-    <contextParameter comment="" name="table_name_vnf" prompt="table_name_vnf?" promptNeeded="false" repositoryContextId="_RpcG8DEjEemzV-Su763qjQ" type="id_String" value=""/>
-    <contextParameter comment="" name="table_name_vrf" prompt="table_name_vrf?" promptNeeded="false" repositoryContextId="_RpcG8DEjEemzV-Su763qjQ" type="id_String" value=""/>
-    <contextParameter comment="" name="tmp_table_name_uk_bluprint_audit" prompt="tmp_table_name_uk_bluprint_audit?" promptNeeded="false" repositoryContextId="_RpcG8DEjEemzV-Su763qjQ" type="id_String" value=""/>
-    <contextParameter comment="" name="tmp_table_name_uk_circuit_olo" prompt="tmp_table_name_uk_circuit_olo?" promptNeeded="false" repositoryContextId="_RpcG8DEjEemzV-Su763qjQ" type="id_String" value=""/>
+    <contextParameter comment="" name="LAST_FILE_TIMESTAMP" prompt="LAST_FILE_TIMESTAMP?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="odf_source" prompt="odf_source?" promptNeeded="false" type="id_String" value="&quot;CRAMER&quot;"/>
+    <contextParameter comment="" name="proxy_host" prompt="proxy_host?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="proxy_port" prompt="proxy_port?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="ref_table_name_blueprint" prompt="ref_table_name_blueprint?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="ref_table_name_circuit_customer_map" prompt="ref_table_name_circuit_customer_map?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="ref_table_name_contract" prompt="ref_table_name_contract?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="ref_table_name_pop_tier" prompt="ref_table_name_pop_tier?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="ref_table_name_product" prompt="ref_table_name_product?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="ref_table_name_service_model" prompt="ref_table_name_service_model?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="ref_table_name_u_account_alias" prompt="ref_table_name_u_account_alias?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="ref_table_name_uk_business_service" prompt="ref_table_name_uk_business_service?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="ref_table_name_uk_country" prompt="ref_table_name_uk_country?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="ref_table_name_uk_device_func_alias" prompt="ref_table_name_uk_device_func_alias?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="ref_table_name_uk_device_func_device" prompt="ref_table_name_uk_device_func_device?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="ref_table_name_uk_itsm_enabled_customer" prompt="ref_table_name_uk_itsm_enabled_customer?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="ref_table_name_uk_product_default_bp" prompt="ref_table_name_uk_product_default_bp?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="sn_login" prompt="sn_login?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="sn_password" prompt="sn_password?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="sn_url" prompt="sn_url?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="table_name_access" prompt="table_name_access?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="table_name_card" prompt="table_name_card?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="table_name_circuit" prompt="table_name_circuit?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="table_name_cmdb_rel_ci" prompt="table_name_cmdb_rel_ci?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="table_name_customer" prompt="table_name_customer?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="table_name_interface" prompt="table_name_interface?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="table_name_ipapp" prompt="table_name_ipapp?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="table_name_location" prompt="table_name_location?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="table_name_node" prompt="table_name_node?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="table_name_olo" prompt="table_name_olo?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="table_name_physical_port" prompt="table_name_physical_port?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="table_name_qos" prompt="table_name_qos?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="table_name_shelf" prompt="table_name_shelf?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="table_name_site" prompt="table_name_site?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="table_name_slot" prompt="table_name_slot?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="table_name_technical_service" prompt="table_name_technical_service?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="table_name_uk_bp_instantiation" prompt="table_name_uk_bp_instantiation?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="table_name_vnf" prompt="table_name_vnf?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="table_name_vrf" prompt="table_name_vrf?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="tmp_table_name_uk_bluprint_audit" prompt="tmp_table_name_uk_bluprint_audit?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="tmp_table_name_uk_circuit_olo" prompt="tmp_table_name_uk_circuit_olo?" promptNeeded="false" type="id_String" value=""/>
   </context>
   <parameters>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
@@ -798,7 +798,7 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="out2"/>
   </connection>
   <subjob>
-    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" show="false" value="true"/>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tPrejob_1"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="230;100;0"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="255;220;180"/>
@@ -809,7 +809,7 @@
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
   <subjob>
-    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" show="false" value="true"/>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tPostjob_1"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="230;100;0"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="255;220;180"/>
@@ -834,13 +834,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_e5480521-6c7a-4dda-82eb-3585646b32e2"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>K8z89wsNGUJJT+e4sLt1JWgUavwauwSeuEPlfpyvjHUPpOQCBpupPLcSlhHVSwMcJ9HVVOzRQ9lR
-AOR3sJkDfQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_2814ece9-6250-427c-805a-3da57c6a38d9"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>t/eR8WBD+l4Wqo4q5/H0HcCCTJmpFH4PVEBqDutk1bZVD5htLetMMjiG+bCN4ZuN0/Xl/LGEPUfX
-0c597oHoPg==</DigestValue></Reference></SignedInfo><SignatureValue>C0+dncHwAT63jnJfEo0uKtQNQgyUSgPOF9COoZwmd3CYVada59+AWyrhC+OCjwhifd4MASeHGGL8
-EuTNpSJXJfaE8N4Pv7cmfQ7kA+s9U49tzv91hAppGfU2Bhqft0i5f4/wZMtYCjSLp5stJs7b0qkp
-dySqFJ16ox/kWOPaFS7ukkInlsqap9SBTbkhjklXq6fF3/gmexokkaFw+W1izjYPj5iE76aazvPR
-JXrN4BTLheKPtpt8ZlLrlUv1DSbM3g5aXj5eSWXRPJyIJA2RWG6DTcARIZnDh+UEzJmidv7XbOTn
-0gZL7MtCKPhHczwVilnceI7s3r2p8WeFz4/LOg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_14a1800e-eac8-4fd8-96a9-fbc916bf7325"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>58edjlmCNCMZCp1UueESSK4Zf/cggxp8mVlwgI2NYHPbyM+2wtNx0r8XRCcplNGqN5gClxGg7O96
+5jwlGxnsew==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_7e1b2a7e-f44a-4277-9537-0cf64dcb44ab"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>oKhLSEkkGeCPsSYUACK0I2UpZ+f1K11RXxwmy+iaC6asMShfns+uFJrSSdNXs6wQFlnZbTFRENQX
+vyZKvoKjMg==</DigestValue></Reference></SignedInfo><SignatureValue>W3kfo7nUTbovWRdLYy8C7UX8rz8DY6UXbPMgtEgjy+aMqPP5AGO1hnLawquVFV7Q7Q/urPNCv0Pk
+DS/VUsxzST/zIkTKlYv+ObzXsdTIxIWfSFiZtWthnKFeRH6Vf+e+jHWfGT7ytD53S9zF3Ni3FUzk
+e4Yh/CDwiJrhsLKBHQmuMcBfAsJ0Pp0DB75IMIYi6EXpCYJ7eXKbKihWaANNHGjkq/9aIQ4Fc9ZM
+XRCteMR4qFrzOSwz3ZRP1+yMl9jEDp1mbjESRCi/mlNE8fNO+EST2Y2vRwbT2uBD08VA1+o0Xvjx
+Z8Zoc31wbcbbkrLFOVj6lZt5U41mtUMkaltEIg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -864,4 +864,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_2814ece9-6250-427c-805a-3da57c6a38d9" Target="#_e5480521-6c7a-4dda-82eb-3585646b32e2"><Timestamp>2019-05-02 13:08:16</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_7e1b2a7e-f44a-4277-9537-0cf64dcb44ab" Target="#_14a1800e-eac8-4fd8-96a9-fbc916bf7325"><Timestamp>2019-05-02 13:46:51</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
