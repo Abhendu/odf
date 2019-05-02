@@ -648,6 +648,8 @@
       <relatedItems xmi:id="_kTYAYGzVEemfk9Nd3dcCeQ" id="_VglKYGp4EemJu7zg2d-rWg" version="Latest" type="job"/>
       <relatedItems xmi:id="_32KDgGzVEemfk9Nd3dcCeQ" id="_pbCw4Gp8EemJu7zg2d-rWg" version="Latest" type="job"/>
       <relatedItems xmi:id="_32KDgWzVEemfk9Nd3dcCeQ" id="_WWlz0GsREemhO8RTEAERtg" version="Latest" type="job"/>
+      <relatedItems xmi:id="_7F4H0GzVEemfk9Nd3dcCeQ" id="_bT0KkGy4EemBcKOtumdvSg" version="Latest" type="job"/>
+      <relatedItems xmi:id="_7F4H0WzVEemfk9Nd3dcCeQ" id="_p2OD4GyTEemBcKOtumdvSg" version="Latest" type="job"/>
     </ItemsRelations>
     <migrationTask xmi:id="_oFFuQGbREem97qk6meX9dA" id="org.talend.repository.localprovider.RemoveRoutineFolderTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>
     <migrationTask xmi:id="_oFFuQWbREem97qk6meX9dA" id="org.talend.repository.localprovider.model.migration.ChangeXmiSerialization" breaks="5.1.1" version="5.1.2" status="noimpact"/>
