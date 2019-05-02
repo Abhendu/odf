@@ -622,6 +622,20 @@
       <relatedItems xmi:id="_ME2xFGzSEemfk9Nd3dcCeQ" id="DataQualityDependencies" version="Latest" type="routine"/>
       <relatedItems xmi:id="_ME2xFWzSEemfk9Nd3dcCeQ" id="TalendStringUtil" version="Latest" type="routine"/>
     </ItemsRelations>
+    <ItemsRelations xmi:id="_iLP9oGzSEemfk9Nd3dcCeQ">
+      <baseItem xmi:id="_iLP9oWzSEemfk9Nd3dcCeQ" id="_cAz0oGzSEemfk9Nd3dcCeQ" version="0.1" type="job"/>
+      <relatedItems xmi:id="_iLP9omzSEemfk9Nd3dcCeQ" id="_RpcG8DEjEemzV-Su763qjQ" version="Latest" type="context"/>
+      <relatedItems xmi:id="_iLP9o2zSEemfk9Nd3dcCeQ" id="SQLike" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_iLP9pGzSEemfk9Nd3dcCeQ" id="Numeric" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_iLP9pWzSEemfk9Nd3dcCeQ" id="Relational" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_iLP9pmzSEemfk9Nd3dcCeQ" id="TalendString" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_iLP9p2zSEemfk9Nd3dcCeQ" id="TalendStringUtil" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_iLP9qGzSEemfk9Nd3dcCeQ" id="DataOperation" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_iLP9qWzSEemfk9Nd3dcCeQ" id="StringHandling" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_iLP9qmzSEemfk9Nd3dcCeQ" id="TalendDataGenerator" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_iLP9q2zSEemfk9Nd3dcCeQ" id="TalendDate" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_iLP9rGzSEemfk9Nd3dcCeQ" id="Mathematical" version="Latest" type="routine"/>
+    </ItemsRelations>
     <migrationTask xmi:id="_oFFuQGbREem97qk6meX9dA" id="org.talend.repository.localprovider.RemoveRoutineFolderTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>
     <migrationTask xmi:id="_oFFuQWbREem97qk6meX9dA" id="org.talend.repository.localprovider.model.migration.ChangeXmiSerialization" breaks="5.1.1" version="5.1.2" status="noimpact"/>
     <migrationTask xmi:id="_oFFuQmbREem97qk6meX9dA" id="org.talend.repository.model.migration.CleanFoldersMigrationTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>
