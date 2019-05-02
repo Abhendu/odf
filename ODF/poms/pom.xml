@@ -18,40 +18,23 @@
     <module>jobs/process/logic_test/a002_adsl_sdsl_node_check_0.1</module>
     <module>jobs/process/logic_test/a000_adsl_sdsl_main_job_0.1</module>
     <module>jobs/process/logic_test/a003_access_circuit_check_0.1</module>
-    <module>jobs/process/CMDB_New/IPVPN/a009_node_processing_0.1</module>
     <module>jobs/process/CMDB_New/IPVPN/file_a007_shelf_processing_0.1</module>
-    <module>jobs/process/CMDB_New/IPVPN/a005_location_processing_0.1</module>
-    <module>jobs/process/CMDB_New/IPVPN/a013_site_processing_0.1</module>
     <module>jobs/process/CMDB_New/IPVPN/file_a002_customer_processing_0.1</module>
     <module>jobs/process/CMDB_New/IPVPN/file_a005_location_processing_0.1</module>
-    <module>jobs/process/CMDB_New/IPVPN/a002_customer_processing_0.1</module>
     <module>jobs/process/CMDB_New/IPVPN/file_a010_interface_processing_0.1</module>
     <module>jobs/process/CMDB_New/IPVPN/file_a013_node_processing_0.1</module>
-    <module>jobs/process/CMDB_New/IPVPN/a0031_vrf_processing_internet_0.1</module>
-    <module>jobs/process/CMDB_New/IPVPN/a012_technical_service_processing_0.1</module>
-    <module>jobs/process/CMDB_New/IPVPN/a015_bp_instantiation_processing_0.1</module>
-    <module>jobs/process/CMDB_New/IPVPN/a011_circuit_processing_0.1</module>
     <module>jobs/process/CMDB_New/IPVPN/file_a003_vrf_processing_0.1</module>
     <module>jobs/process/CMDB_New/IPVPN/file_a015_access_list_processing_0.1</module>
-    <module>jobs/process/CMDB_New/IPVPN/a006_olo_processing_0.1</module>
-    <module>jobs/process/CMDB_New/IPVPN/a007_other_ci_processing_0.1</module>
     <module>jobs/process/CMDB_New/IPVPN/file_a014_access_processing_0.1</module>
     <module>jobs/process/CMDB_New/IPVPN/file_a018_circuit_list_processing_0.1</module>
     <module>jobs/process/CMDB_New/IPVPN/file_a009_phy_port_processing_0.1</module>
-    <module>jobs/process/CMDB_New/IPVPN/a010_access_processing_0.1</module>
-    <module>jobs/process/CMDB_New/IPVPN/a000_ipvpn_master_0.1</module>
-    <module>jobs/process/CMDB_New/IPVPN/a001_file_extraction_0.1</module>
-    <module>jobs/process/CMDB_New/IPVPN/a008_vnf_processing_0.1</module>
     <module>jobs/process/CMDB_New/IPVPN/file_a011_slot_processing_0.1</module>
     <module>jobs/process/CMDB_New/IPVPN/subjob_delta_record_creation_0.1</module>
     <module>jobs/process/CMDB_New/IPVPN/file_a012_vnf_processing_0.1</module>
-    <module>jobs/process/CMDB_New/IPVPN/a014_cmdb_rel_ci_processing_0.1</module>
     <module>jobs/process/CMDB_New/IPVPN/file_a017_circuit_processing_0.1</module>
     <module>jobs/process/a000_internet_master_0.1</module>
     <module>jobs/process/CMDB_New/IPVPN/file_a019_circuit_file_join_processing_0.1</module>
-    <module>jobs/process/CMDB_New/IPVPN/a003_vrf_processing_0.1</module>
     <module>jobs/process/CMDB_New/IPVPN/file_a004_qos_processing_0.1</module>
-    <module>jobs/process/CMDB_New/IPVPN/a004_qos_processing_0.1</module>
     <module>jobs/process/CMDB_New/IPVPN/file_a006_olo_processing_0.1</module>
     <module>jobs/process/CMDB_New/IPVPN/file_a008_card_processing_0.1</module>
     <module>jobs/process/CMDB_New/IPVPN/file_a016_access_file_join_processing_0.1</module>
