@@ -1111,6 +1111,7 @@
       <relatedItems xmi:id="_XqrFSnDMEemhrb5GGCAFUw" id="TalendDate" version="Latest" type="routine"/>
       <relatedItems xmi:id="_XqrFS3DMEemhrb5GGCAFUw" id="Mathematical" version="Latest" type="routine"/>
       <relatedItems xmi:id="_XqrFTHDMEemhrb5GGCAFUw" id="_UrWxQDCcEeeRXb4huft-Tg - metadata" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_kCruUHDNEemhrb5GGCAFUw" id="SQLike" version="Latest" type="routine"/>
     </ItemsRelations>
     <ItemsRelations xmi:id="_6yGiAHDMEemhrb5GGCAFUw">
       <baseItem xmi:id="_6yGiAXDMEemhrb5GGCAFUw" id="_28oFQHDMEemhrb5GGCAFUw" version="0.1" type="job"/>
