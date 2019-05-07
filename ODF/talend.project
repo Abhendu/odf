@@ -654,6 +654,8 @@
       <relatedItems xmi:id="_DfKuAWzWEemfk9Nd3dcCeQ" id="_QVJBEGy5EemBcKOtumdvSg" version="Latest" type="job"/>
       <relatedItems xmi:id="_DfKuAmzWEemfk9Nd3dcCeQ" id="_t6BbQGy5EemBcKOtumdvSg" version="Latest" type="job"/>
     </ItemsRelations>
+    <deletedFolders>process/CMDB_New/IPVPN</deletedFolders>
+    <deletedFolders>process/CMDB_New</deletedFolders>
     <migrationTask xmi:id="_oFFuQGbREem97qk6meX9dA" id="org.talend.repository.localprovider.RemoveRoutineFolderTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>
     <migrationTask xmi:id="_oFFuQWbREem97qk6meX9dA" id="org.talend.repository.localprovider.model.migration.ChangeXmiSerialization" breaks="5.1.1" version="5.1.2" status="noimpact"/>
     <migrationTask xmi:id="_oFFuQmbREem97qk6meX9dA" id="org.talend.repository.model.migration.CleanFoldersMigrationTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>
