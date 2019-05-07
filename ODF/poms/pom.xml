@@ -11,7 +11,6 @@
   <modules>
     <module>code/routines</module>
     <module>jobs/process/cmdb_light_model/a00_master_job_0.1</module>
-    <module>jobs/process/cmdb_light_model/a01_extract_input_file_0.1</module>
     <module>jobs/joblets/prejob_0.1</module>
     <module>jobs/joblets/map_service_file_to_refservmodtab_0.1</module>
     <module>jobs/process/logic_test/a001_adsl_sdsl_circuit_check_0.1</module>
@@ -63,6 +62,7 @@
     <module>jobs/process/CMDB/OSN2/Dev/osn2_master_v1_0.1</module>
     <module>jobs/process/CMDB/DLM/Dev_Local/dlm_etl_1.1</module>
     <module>jobs/process/CMDB/DLM/Dev_Local/dlm_etl_1.0</module>
+    <module>jobs/process/cmdb_light_model/file01_dlm_processing_0.1</module>
   </modules>
   <properties>
     <talend.project.name>ODF</talend.project.name>
