@@ -60,6 +60,16 @@
       <artifactId>routines</artifactId>
       <version>7.0.1</version>
     </dependency>
+    <dependency>
+      <groupId>org.example.odf.job</groupId>
+      <artifactId>file02_dlm_rel_ci</artifactId>
+      <version>0.1.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.example.odf.job</groupId>
+      <artifactId>file01_dlm_processing</artifactId>
+      <version>0.1.0</version>
+    </dependency>
   </dependencies>
   <build>
     <finalName>${talend.job.finalName}</finalName>
