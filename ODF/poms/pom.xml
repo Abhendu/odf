@@ -63,6 +63,7 @@
     <module>jobs/process/CMDB/DLM/Dev_Local/dlm_etl_1.1</module>
     <module>jobs/process/CMDB/DLM/Dev_Local/dlm_etl_1.0</module>
     <module>jobs/process/cmdb_light_model/file01_dlm_processing_0.1</module>
+    <module>jobs/process/cmdb_light_model/file02_dlm_rel_ci_0.1</module>
   </modules>
   <properties>
     <talend.project.name>ODF</talend.project.name>
