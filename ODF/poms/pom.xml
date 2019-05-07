@@ -61,6 +61,8 @@
     <module>jobs/process/CMDB_New/IPVPN/file_a006_qos_processing_0.1</module>
     <module>jobs/process/CMDB_New/IPVPN/file_a004_overlay_service_processing_0.1</module>
     <module>jobs/process/CMDB/OSN2/Dev/osn2_master_v1_0.1</module>
+    <module>jobs/process/CMDB/DLM/Dev_Local/dlm_etl_1.1</module>
+    <module>jobs/process/CMDB/DLM/Dev_Local/dlm_etl_1.0</module>
   </modules>
   <properties>
     <talend.project.name>ODF</talend.project.name>
