@@ -1,24 +1,2 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<recyclebin:RecycleBin xmlns:recyclebin="http://www.talend.org/recyclebin" lastUpdate="2019-05-07T09:39:52.356+0100">
-  <deletedItems id="_ONxNoGgTEem3M6m8s-HkSw" path="CMDB_New/IPVPN" type="PROCESS"/>
-  <deletedItems id="_cAz0oGzSEemfk9Nd3dcCeQ" path="CMDB_New/IPVPN" type="PROCESS"/>
-  <deletedItems id="_y6rIYGcsEemmXJCbkCjIfA" path="CMDB_New/IPVPN" type="PROCESS"/>
-  <deletedItems id="_YnZk0GgcEem3M6m8s-HkSw" path="CMDB_New/IPVPN" type="PROCESS"/>
-  <deletedItems id="_Vsg2IGgeEem3M6m8s-HkSw" path="CMDB_New/IPVPN" type="PROCESS"/>
-  <deletedItems id="_bysUwGgfEem3M6m8s-HkSw" path="CMDB_New/IPVPN" type="PROCESS"/>
-  <deletedItems id="_G7nOcGpfEemJu7zg2d-rWg" path="CMDB_New/IPVPN" type="PROCESS"/>
-  <deletedItems id="_L5qGsGpoEemJu7zg2d-rWg" path="CMDB_New/IPVPN" type="PROCESS"/>
-  <deletedItems id="_ZuCckGpoEemJu7zg2d-rWg" path="CMDB_New/IPVPN" type="PROCESS"/>
-  <deletedItems id="_fyPasGpoEemJu7zg2d-rWg" path="CMDB_New/IPVPN" type="PROCESS"/>
-  <deletedItems id="_jMxn4GpoEemJu7zg2d-rWg" path="CMDB_New/IPVPN" type="PROCESS"/>
-  <deletedItems id="_y2rU8GpoEemJu7zg2d-rWg" path="CMDB_New/IPVPN" type="PROCESS"/>
-  <deletedItems id="_VglKYGp4EemJu7zg2d-rWg" path="CMDB_New/IPVPN" type="PROCESS"/>
-  <deletedItems id="_pbCw4Gp8EemJu7zg2d-rWg" path="CMDB_New/IPVPN" type="PROCESS"/>
-  <deletedItems id="_WWlz0GsREemhO8RTEAERtg" path="CMDB_New/IPVPN" type="PROCESS"/>
-  <deletedItems id="_p2OD4GyTEemBcKOtumdvSg" path="CMDB_New/IPVPN" type="PROCESS"/>
-  <deletedItems id="_bT0KkGy4EemBcKOtumdvSg" path="CMDB_New/IPVPN" type="PROCESS"/>
-  <deletedItems id="_96-WMGyUEemBcKOtumdvSg" path="CMDB_New/IPVPN" type="PROCESS"/>
-  <deletedItems id="_QVJBEGy5EemBcKOtumdvSg" path="CMDB_New/IPVPN" type="PROCESS"/>
-  <deletedItems id="_t6BbQGy5EemBcKOtumdvSg" path="CMDB_New/IPVPN" type="PROCESS"/>
-  <deletedItems id="_u5c-UGzBEemBcKOtumdvSg" path="CMDB_New/IPVPN" type="PROCESS"/>
-</recyclebin:RecycleBin>
+<recyclebin:RecycleBin xmlns:recyclebin="http://www.talend.org/recyclebin" lastUpdate="2019-05-07T09:40:00.917+0100"/>
