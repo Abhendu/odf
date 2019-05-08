@@ -820,12 +820,35 @@
       <column comment="" key="false" length="-1" name="delete_flg" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="64" posY="192">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_1"/>
-    <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println(&quot;context.dlm_src_file_Directory &quot;+context.dlm_src_file_Directory);"/>
-    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+  <node componentName="tFileInputProperties" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="192" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputProperties_1"/>
+    <elementParameter field="CLOSED_LIST" name="FILE_FORMAT" value="PROPERTIES_FORMAT"/>
+    <elementParameter field="CLOSED_LIST" name="RETRIVE_MODE" show="false" value="RETRIVE_BY_SECTION"/>
+    <elementParameter field="TEXT" name="SECTION_NAME" show="false" value="&quot;section&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="context.dlm_config_properties"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tJava_1"/>
+    <elementParameter field="MEMO" name="COMMENT" value="&quot;C:/Users/ChowdhuryA11/Desktop/dlm_config.properties&quot;&#13;&#10;&#13;&#10;&quot;../config_files/dlm_config.properties&quot;"/>
+    <metadata connector="FLOW" name="tFileInputProperties_1">
+      <column key="false" length="255" name="key" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column key="false" length="255" name="value" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tContextLoad" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="544" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tContextLoad_1"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Warning"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="true"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" value="true"/>
+    <elementParameter field="CHECK" name="DIEONERROR" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tContextLoad_1">
+      <column defaultValue="" key="false" length="255" name="key" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="value" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
   </node>
   <connection connectorName="ITERATE" label="Iterate" lineStyle="7" metaname="tFileList_2" offsetLabelX="0" offsetLabelY="0" source="tFileList_2" target="tFileInputDelimited_3">
     <elementParameter field="CHECK" name="ENABLE_PARALLEL" value="false"/>
@@ -1172,7 +1195,11 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row2"/>
   </connection>
-  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tJava_1" offsetLabelX="0" offsetLabelY="0" source="tJava_1" target="tFileList_2">
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tFileInputProperties_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputProperties_1" target="tContextLoad_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tFileInputProperties_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputProperties_1" target="tFileList_2">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk1"/>
   </connection>
   <subjob>
@@ -1181,17 +1208,17 @@
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
   <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_1"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputProperties_1"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_c57dc941-4fa3-4b75-bd6c-9e4593ce1cc4"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>T4TzM2t6D14iugDj+4CL1XPemDYWyk+K3vll2DcJzKeD8YAuIjsDI6GKdBTz9ZcNxvZGoPi+UKMZ
-Fzai0eu4vA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_49d0ddef-ad3e-4a90-b524-dcfb4c0c287d"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>pvBCxd0MMjUhcl+vgr+KTl5fh06RG9Hj5IcwUkh5uoUOfkvoNF24XLQbemIaACbkYXd/92GerNO1
-IJx/SGT5fA==</DigestValue></Reference></SignedInfo><SignatureValue>QO/oOmn+iB1kBhP6lHiIZsC6ViuKU3lvs/BscQ9MHH++Pz5VLJStqT5IY5llC6vtHy6/xZ+d9N8C
-eLNmGbpj669v8jSQIOP55HtYa7oTOxRZqKDiGbdHFDCjuEX6ET0HQc3tFVqdzm1kCH6SaNUvyjG4
-3YKX2ExstOSSJWnGFS1GeEjKHofBnMkPlMypNY/4/x0n4tCZODaCzwzTdc3i0PC7G4RFUk0HvY4F
-vtQeRq7dz+r0QPJYxCbDTZayx5JRq3ZXjS1d1iYAryFo5jaHC+7VVyQSs3lbX8oBgX4hTK9KHml+
-/OzWrRrdNtvYBXnzCIyKQkqXL2FXc4p2zun6/A==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_edfc21df-19d3-4e25-a590-18e67ae487f7"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>p7JJs9tztqZSWG6J/aYus626/XMjsqxlS3cHTmBonIRkIwCxbEOp0kkraa4DcjNUotAlAvKY+wGd
+yFlUw+9I7g==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_d3241442-7b94-4f27-a1f5-a5e3496d5911"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>imEgBfY4va0vPbd2Gys/J8eDHlUv33DxB6oZCcRrZMl2Ep3yMLWJgh6fzHxaJdESAaKueAQ4/oRu
+KyfR1zuJzw==</DigestValue></Reference></SignedInfo><SignatureValue>YExsEWPCOacX9wMPmbup+VIakESgyMWYb7jN0eFPkmckSWAJXe725QMps2bD1XJ82YgPOCHHadyN
+kYeiWS6MSJMDUOSfE1a6ZzqFm9zRgkdgREK/R50Vh38xMqg7qzKQKwdxP5xFkwr/Vsd2XRSJ2Rl8
+jRURsd1m5pbCmmpq2gA3JG62Qez+hkT+EDszThDhP3jLxkdOhJePuN9l18mM71cAGfutGu1RNOua
+86QC6+mvZMDIxSVPmESGkBFcU7erfU1egj6/kgZV61jwzLsniVQ5syNq6aWIQAlq5iqCd9/jCLTx
+nQX870LHgfdiGmJlMySrG/gJ+j9grXk4Wax8kw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -1215,4 +1242,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_49d0ddef-ad3e-4a90-b524-dcfb4c0c287d" Target="#_c57dc941-4fa3-4b75-bd6c-9e4593ce1cc4"><Timestamp>2019-05-08 09:36:45</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_d3241442-7b94-4f27-a1f5-a5e3496d5911" Target="#_edfc21df-19d3-4e25-a590-18e67ae487f7"><Timestamp>2019-05-08 09:40:30</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
