@@ -64,6 +64,7 @@
     <module>jobs/process/cmdb_light_model/file01_dlm_processing_0.1</module>
     <module>jobs/process/cmdb_light_model/file02_dlm_rel_ci_0.1</module>
     <module>jobs/process/cmdb_light_model/a00_dlm_master_job_0.1</module>
+    <module>jobs/process/cmdb_light_model/subjob_delta_record_processing_0.1</module>
   </modules>
   <properties>
     <talend.project.name>ODF</talend.project.name>
