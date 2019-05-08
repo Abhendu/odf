@@ -342,6 +342,38 @@
     <elementParameter field="CHECK" name="FORMAT_FILEPATH_TO_SLASH" value="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
+  <node componentName="tFileList" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="320" posY="832">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileList_4"/>
+    <elementParameter field="DIRECTORY" name="DIRECTORY" value="&quot;D:/Talend-Studio-Cloud-7.0.1/Talend-Studio-20180411_1414-V7.0.1/workspace&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="LIST_MODE" value="FILES"/>
+    <elementParameter field="CHECK" name="INCLUDSUBDIR" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="CASE_SENSITIVE" value="YES"/>
+    <elementParameter field="CHECK" name="ERROR" value="false"/>
+    <elementParameter field="CHECK" name="GLOBEXPRESSIONS" value="true"/>
+    <elementParameter field="TABLE" name="FILES"/>
+    <elementParameter field="RADIO" name="ORDER_BY_NOTHING" value="true"/>
+    <elementParameter field="RADIO" name="ORDER_BY_FILENAME" value="false"/>
+    <elementParameter field="RADIO" name="ORDER_BY_FILESIZE" value="false"/>
+    <elementParameter field="RADIO" name="ORDER_BY_MODIFIEDDATE" value="false"/>
+    <elementParameter field="RADIO" name="ORDER_ACTION_ASC" value="true"/>
+    <elementParameter field="RADIO" name="ORDER_ACTION_DESC" value="false"/>
+    <elementParameter field="CHECK" name="IFEXCLUDE" value="false"/>
+    <elementParameter field="TEXT" name="EXCLUDEFILEMASK" show="false" value="&quot;*.txt&quot;"/>
+    <elementParameter field="CHECK" name="FORMAT_FILEPATH_TO_SLASH" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tFileDelete" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="800" posY="832">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileDelete_2"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;D:/Talend-Studio-Cloud-7.0.1/Talend-Studio-20180411_1414-V7.0.1/workspace/in.csv&quot;"/>
+    <elementParameter field="DIRECTORY" name="DIRECTORY" show="false" value="&quot;D:/Talend-Studio-Cloud-7.0.1/Talend-Studio-20180411_1414-V7.0.1/workspace/delete_folder&quot;"/>
+    <elementParameter field="TEXT" name="PATH" show="false" value="&quot;D:/Talend-Studio-Cloud-7.0.1/Talend-Studio-20180411_1414-V7.0.1/workspace/delete_folder or delete_file&quot;"/>
+    <elementParameter field="CHECK" name="FAILON" value="true"/>
+    <elementParameter field="CHECK" name="FOLDER" value="false"/>
+    <elementParameter field="CHECK" name="FOLDER_FILE" value="false"/>
+    <elementParameter field="LABEL" name="NOTE" value="*Note &quot;CURRENT_STATUS&quot; including:&#10;&quot;File (or path) deleted.&quot;&#10;&quot;No file (or path) deleted.&quot;&#10;&quot;File (or path) does not exist or is invalid.&quot;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFileDelete_2"/>
+  </node>
   <node componentName="tFileDelete" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="800" posY="672">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileDelete_1"/>
     <elementParameter field="FILE" name="FILENAME" value="((String)globalMap.get(&quot;tFileList_3_CURRENT_FILEPATH&quot;))"/>
@@ -381,10 +413,12 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row2"/>
   </connection>
-  <connection connectorName="ITERATE" label="Iterate" lineStyle="7" metaname="tFileList_3" offsetLabelX="0" offsetLabelY="0" source="tFileList_3" target="tFileDelete_1">
-    <elementParameter field="CHECK" name="ENABLE_PARALLEL" value="false"/>
-    <elementParameter field="TEXT" name="NUMBER_PARALLEL" show="false" value="2"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="iterate2"/>
+  <connection connectorName="RUN_IF" label="If" lineStyle="6" metaname="tFileList_3" offsetLabelX="0" offsetLabelY="0" source="tFileList_3" target="tFileDelete_1">
+    <elementParameter field="MEMO_JAVA" name="CONDITION" value="((Integer)globalMap.get(&quot;tFileList_3_NB_FILE&quot;))!=0"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="If2"/>
+  </connection>
+  <connection connectorName="RUN_IF" label="If" lineStyle="6" metaname="tFileList_4" offsetLabelX="0" offsetLabelY="0" source="tFileList_4" target="tFileDelete_2">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="If3"/>
   </connection>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileList_1"/>
@@ -406,13 +440,28 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_6ddfd322-3af8-455f-a568-2c40f3e2f11f"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>JOzAdTuP5jcveDxC7jBzGZLbwXJawzb024aBJN9kvwCRZfC7dero19QUW74RZmhdM1mudLa7o/cX
-Sa6zDvwqZg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_47b09f76-e818-440b-a473-22f2b47dba40"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Ncl1EZrokIemSNlxv78tnJ8oaTRlUGo1maI/sej8v6hnKvyuyJjcHXC7het4a24plSW+Y6zR+SRg
-HTLs461oaw==</DigestValue></Reference></SignedInfo><SignatureValue>Yeb/vDaLwrjO2QeL9FcYJF9Ck4T15SUxBQ82ap9VbCAvebo61P/D9dm1rmpRHUkbIf8CI3qdjQX1
-LlSLSO0CSx993s+e5Cs+jrN7BWOVDyF3G4fabqsr5JG6vcogAUu/IZKbp4dyHEf0YUCLv2qeOt+/
-iye5Sjpz7MEoi7AaFrdbdFTrj7iVRRB9xwzDT+pT1p+OzJVy93ePjmSRFaSbpHBo7JAHQT08Ra2P
-kOjVZTXEwiAactIQs9ug1Bc4/yxR8GIgMmy0T/7niaNGq5WDGTxrqSld84laHuWrp60GZOnUBOKv
-mAGtifOPiXK+0yiVjt1sui95HGASuMOGTgvXgg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileList_4"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileDelete_2"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileDelete_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_2fe899e4-30f3-4a06-9fb9-f51bc6b59463"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>5S/L/Cfdp4NMgQ2TK/CUKI50ABKULzbKHHQZopIXdSVVdRNcIDAWSWOntlDkp6dugNAe3i6LNRrb
+Bgk8hmMOeg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_44540a31-3c03-446e-8c60-bd2b84c65ef3"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>lhY+CCTRRWFx2YNIJbhgVRE2Od+21RJ0Cu/pkXQ866TPKnLa80hFBp7+IBuln1HVBHp17gq0QKpl
+kqnCLUy1TA==</DigestValue></Reference></SignedInfo><SignatureValue>NFC2EIx71xwnfHNOhI3QSVXCWd26jwBZWnK7DeB4ApcKCW6pwSaLOe5hnS2oRr8Nss/6+e/WZctg
+Sl22BATT9nycJo4Xumu76Cp7QKU23qTeEPg+21t/MhaZRFe7O3+xdl0423ZHb1Nm6K2Hb8PwgYGd
+rS8zSg03M/lu6iIgRIIDQj7fs/uNCmnjWyFVbNmBLupYzOULl7l0LtxdeO/qsintRjBaHmka0iK/
+L8JM0rLZlxKP8qWXpjb6Syz6WaPfyWRhfZy2PNnZ+7K+OpYrxq24l8IOd0axjxvYNcLruVJRip/s
+aKL+VJ22aWeq2aLJ1aw/yMb7WDoWGXB21cFcbw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -436,4 +485,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_47b09f76-e818-440b-a473-22f2b47dba40" Target="#_6ddfd322-3af8-455f-a568-2c40f3e2f11f"><Timestamp>2019-05-08 11:45:31</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_44540a31-3c03-446e-8c60-bd2b84c65ef3" Target="#_2fe899e4-30f3-4a06-9fb9-f51bc6b59463"><Timestamp>2019-05-08 11:46:59</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
