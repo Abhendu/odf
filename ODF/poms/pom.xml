@@ -10,8 +10,62 @@
   <url>http://www.talend.org/</url>
   <modules>
     <module>code/routines</module>
-    <module>jobs/process/cmdb_light_model/a00_master_job_0.1</module>
-    <module>jobs/process/cmdb_light_model/a01_get_input_file_0.1</module>
+    <module>jobs/joblets/prejob_0.1</module>
+    <module>jobs/joblets/map_service_file_to_refservmodtab_0.1</module>
+    <module>jobs/process/logic_test/a001_adsl_sdsl_circuit_check_0.1</module>
+    <module>jobs/process/logic_test/a002_adsl_sdsl_node_check_0.1</module>
+    <module>jobs/process/logic_test/a000_adsl_sdsl_main_job_0.1</module>
+    <module>jobs/process/logic_test/a003_access_circuit_check_0.1</module>
+    <module>jobs/process/a000_internet_master_0.1</module>
+    <module>jobs/process/CMDB/INTERNET/a013_site_processing_0.1</module>
+    <module>jobs/process/CMDB_New/IPVPN/file_a002_customer_processing_0.1</module>
+    <module>jobs/process/CMDB/INTERNET/a012_technical_service_processing_0.1</module>
+    <module>jobs/process/CMDB_New/IPVPN/file_a020_circuit_list_processing_0.1</module>
+    <module>jobs/process/CMDB/INTERNET/a009_node_processing_0.1</module>
+    <module>jobs/process/CMDB_New/IPVPN/file_a019_circuit_processing_0.1</module>
+    <module>jobs/process/CMDB/INTERNET/a011_circuit_processing_0.1</module>
+    <module>jobs/process/CMDB_New/IPVPN/file_a008_olo_processing_0.1</module>
+    <module>jobs/process/CMDB_New/IPVPN/file_a018_access_file_join_processing_0.1</module>
+    <module>jobs/process/CMDB/INTERNET/a007_other_ci_processing_0.1</module>
+    <module>jobs/process/CMDB_New/IPVPN/file_a007_location_processing_0.1</module>
+    <module>jobs/process/CMDB/INTERNET/a0031_vrf_processing_internet_0.1</module>
+    <module>jobs/process/CMDB_New/IPVPN/subjob_delta_record_creation_0.1</module>
+    <module>jobs/process/CMDB_New/IPVPN/file_a014_vnf_processing_0.1</module>
+    <module>jobs/process/CMDB_New/IPVPN/file_a022_technical_service_processing_0.1</module>
+    <module>jobs/process/CMDB/INTERNET/a002_customer_processing_0.1</module>
+    <module>jobs/process/CMDB/INTERNET/a010_access_processing_0.1</module>
+    <module>jobs/process/CMDB/INTERNET/a014_cmdb_rel_ci_processing_0.1</module>
+    <module>jobs/process/CMDB/INTERNET/a015_bp_instantiation_processing_0.1</module>
+    <module>jobs/process/CMDB_New/IPVPN/a000_ipvpn_master_0.1</module>
+    <module>jobs/process/CMDB/INTERNET/a008_vnf_processing_0.1</module>
+    <module>jobs/process/CMDB_New/IPVPN/file_a003_vrf_processing_0.1</module>
+    <module>jobs/process/CMDB_New/IPVPN/file_a024_site_processing_0.1</module>
+    <module>jobs/process/CMDB_New/IPVPN/file_a025_cmdb_rel_ci_processing_0.1</module>
+    <module>jobs/process/CMDB_New/IPVPN/file_a010_card_processing_0.1</module>
+    <module>jobs/process/CMDB_New/IPVPN/file_a013_phy_port_processing_0.1</module>
+    <module>jobs/process/CMDB_New/IPVPN/file_a005_nni_circuit_identification_0.1</module>
+    <module>jobs/process/CMDB_New/IPVPN/file_a009_shelf_processing_0.1</module>
+    <module>jobs/process/CMDB/INTERNET/a001_file_extraction_0.1</module>
+    <module>jobs/process/CMDB_New/IPVPN/file_a011_slot_processing_0.1</module>
+    <module>jobs/process/CMDB/INTERNET/a005_location_processing_0.1</module>
+    <module>jobs/process/CMDB_New/IPVPN/file_a021_circuit_file_join_processing_0.1</module>
+    <module>jobs/process/CMDB_New/IPVPN/file_a023_technical_service_consolidation_0.1</module>
+    <module>jobs/process/CMDB_New/IPVPN/file_a012_interface_processing_0.1</module>
+    <module>jobs/process/CMDB_New/IPVPN/file_a017_access_list_processing_0.1</module>
+    <module>jobs/process/CMDB/INTERNET/a006_olo_processing_0.1</module>
+    <module>jobs/process/CMDB_New/IPVPN/file_a026_cmdb_rel_ci_consolidation_0.1</module>
+    <module>jobs/process/CMDB_New/IPVPN/file_a016_access_processing_0.1</module>
+    <module>jobs/process/CMDB_New/IPVPN/file_a015_node_processing_0.1</module>
+    <module>jobs/process/CMDB_New/IPVPN/file_a006_qos_processing_0.1</module>
+    <module>jobs/process/CMDB_New/IPVPN/file_a004_overlay_service_processing_0.1</module>
+    <module>jobs/process/CMDB/OSN2/Dev/osn2_master_v1_0.1</module>
+    <module>jobs/process/CMDB/DLM/Dev_Local/dlm_etl_1.1</module>
+    <module>jobs/process/CMDB/DLM/Dev_Local/dlm_etl_1.0</module>
+    <module>jobs/process/cmdb_light_model/file01_dlm_processing_0.1</module>
+    <module>jobs/process/cmdb_light_model/file02_dlm_rel_ci_0.1</module>
+    <module>jobs/process/cmdb_light_model/a00_dlm_master_job_0.1</module>
+    <module>jobs/process/cmdb_light_model/subjob_delta_record_processing_1_0.1</module>
+    <module>jobs/process/cmdb_light_model/subjob_delta_record_processing_0.1</module>
   </modules>
   <properties>
     <talend.project.name>ODF</talend.project.name>
