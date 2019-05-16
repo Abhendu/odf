@@ -113,7 +113,6 @@
   </parameters>
   <node componentName="tFileList" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="352" posY="96">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileList_1"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="CHECK" name="TSTATCATCHER_STATS" value="true"/>
     <elementParameter field="DIRECTORY" name="DIRECTORY" value="context.file_output_directory"/>
     <elementParameter field="CLOSED_LIST" name="LIST_MODE" value="FILES"/>
@@ -137,7 +136,6 @@
   </node>
   <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="640" posY="96">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputDelimited_1"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
     <elementParameter field="FILE" name="FILENAME" value="((String)globalMap.get(&quot;tFileList_1_CURRENT_FILEPATH&quot;))"/>
     <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
@@ -241,7 +239,6 @@
   </node>
   <node componentName="tXMLMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="896" posY="96">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tXMLMap_1"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="false"/>
     <elementParameter field="CHECK" name="KEEP_ORDER_FOR_DOCUMENT" value="false"/>
@@ -292,7 +289,6 @@
   </node>
   <node componentName="tSOAP" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1120" posY="96">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tSOAP_1"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="CHECK" name="USE_NTLM" value="false"/>
     <elementParameter field="TEXT" name="NTLM_DOMAIN" show="false" value="&quot;192.168.0.100&quot;"/>
     <elementParameter field="CHECK" name="NEED_AUTH" value="true"/>
@@ -326,7 +322,6 @@
   <connection connectorName="ITERATE" label="Iterate" lineStyle="7" metaname="tFileList_1" offsetLabelX="0" offsetLabelY="0" source="tFileList_1" target="tFileInputDelimited_1">
     <elementParameter field="CHECK" name="ENABLE_PARALLEL" value="false"/>
     <elementParameter field="TEXT" name="NUMBER_PARALLEL" show="false" value="2"/>
-    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="iterate1"/>
   </connection>
   <connection connectorName="FLOW" label="row7" lineStyle="0" metaname="tFileInputDelimited_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_1" target="tXMLMap_1">
@@ -360,12 +355,10 @@
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row7"/>
   </connection>
   <connection connectorName="FLOW" label="out2" lineStyle="0" metaname="out2" offsetLabelX="0" offsetLabelY="0" source="tXMLMap_1" target="tSOAP_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="out2"/>
   </connection>
   <subjob>
@@ -373,13 +366,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_fe42212e-0d17-4819-87fc-17a5efcb2ae8"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>S1qKMO7HB6kKxyzBQVDcFS/kluuzqfIWoeoatIcjkFPP5rvtN/0iZiTkuzHvIMZVpiNoK/vCitFP
-W7qX8wKYeQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_8bcf800b-508c-4843-b4fc-aadeb6cfda70"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>dV0GPYJyPXMxv7bhjQ7oxIe9YPBBSrMhyFEgHqR+a/cOAVudcAfugbFC04zXBe/COVVIjnetVEAM
-ru1yLOpQ/Q==</DigestValue></Reference></SignedInfo><SignatureValue>Y0jJIS93IVaz+roOqsAAdqOfQxBXkhxmNfkPvZZQFgA9zR6TTkTiPagfcHUnIGrRhuxQEhwHXOeo
-Y59Ckshqz9TaSYTLXlh8VuStV8LA2NdAl9syXhfhhDNk9GwNAgLSC6Feii/mQkG9pv2IYAFrvJB6
-vVqJISd821tOH+aZFAlhg0ziccBCGXjLUCC74+bsF8OivNc5UVPPYhR/xdb95DAJw40QCn/MSmAH
-r5IatE0w9Rx7zV91UCWo4bfiPH2JEq+qCfKtQ7si8WbV1sDuOsiLcANyZfRysga4aI2zQEfKrY3f
-yqyCyC1d7cBftNKS2zSABcDI4bL/JGesNp4ipA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_237bca31-9cf2-47fc-80a5-31d35fcd5b5d"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>vxHi9kl9Dpc0IYTxxcpnwCQ2zfSAJuOGpk4JsxHjUWeX+sjLp43dggtEl0k217rI9GKh/rsuHRVJ
+I3/d7sVI5Q==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_433a5e44-f8c3-4343-a9c3-ce7db3b7144a"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>PnBD8kv1sMyQ9fh6rejs+IdKDtD7S9R3B2iv013DNSle1z+ufukfzvRSadgyBfKm6jjLF+9NOD12
+2zK4qI4ugw==</DigestValue></Reference></SignedInfo><SignatureValue>dZ+dHWO5rEt1AXJQk4WFrmluu7vVS564wtbugoWVyETONrqrOnr+8M6wWTk4x1QcuKo7AN8RjaVm
+ImN+1n/QF+a+kmdBCRK0xNyZjZ9unSMAlwcZgG/75JEC/xI7FEMDFzDofjwpVYvnb/n5FNbzAeBY
+9mArxfkPvtcbARdXQ60IpNfLflxPuQ1gRm8erg2hCwz5RTVAkvYkVgafSzJD2QljmaiMvho8C1Bg
+GQos+IihnjkalUnO+NwIEIDRJ/P8NrFSbbxb+eirUg3RcPUtWpCNjiZHgE5yA4arl2AyARfS39+K
+IZCKAowN93fA9ifkh9TpzqbsI0xs5DHUgwl9VA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -403,4 +396,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_8bcf800b-508c-4843-b4fc-aadeb6cfda70" Target="#_fe42212e-0d17-4819-87fc-17a5efcb2ae8"><Timestamp>2019-05-16 13:04:37</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_433a5e44-f8c3-4343-a9c3-ce7db3b7144a" Target="#_237bca31-9cf2-47fc-80a5-31d35fcd5b5d"><Timestamp>2019-05-16 13:04:49</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
