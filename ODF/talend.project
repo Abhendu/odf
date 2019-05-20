@@ -193,6 +193,11 @@
       <relatedItems xmi:id="_cESM9HYsEemsAqioEUzQXw" id="TalendDataGenerator" version="Latest" type="routine"/>
       <relatedItems xmi:id="_cESM9XYsEemsAqioEUzQXw" id="TalendDate" version="Latest" type="routine"/>
       <relatedItems xmi:id="_cESM9nYsEemsAqioEUzQXw" id="Mathematical" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_XCmZAHraEemevJPzc-I8nQ" id="DataMasking" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_XCmZAXraEemevJPzc-I8nQ" id="DqStringHandling" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_XCmZAnraEemevJPzc-I8nQ" id="DataQuality" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_XCmZA3raEemevJPzc-I8nQ" id="DQTechnical" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_XCmZBHraEemevJPzc-I8nQ" id="DataQualityDependencies" version="Latest" type="routine"/>
     </ItemsRelations>
     <ItemsRelations xmi:id="_cESM93YsEemsAqioEUzQXw">
       <baseItem xmi:id="_cESM-HYsEemsAqioEUzQXw" id="_43nj4D6bEeml48W_ro7EFw" version="0.1" type="job"/>
