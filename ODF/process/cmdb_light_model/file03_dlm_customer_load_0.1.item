@@ -1,5 +1,40 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:TalendXMLMap="http://www.talend.org/xmlmap" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" defaultContext="Default" jobType="Standard" xmi:version="2.0">
-  <context confirmationNeeded="false" name="Default"/>
+  <context confirmationNeeded="false" name="Default">
+    <contextParameter comment="&quot;C:/Users/smolab/Downloads/odf_new_codes/output/reference/dlm_config_properties.properties&quot;" name="dlm_config_properties" prompt="dlm_config_properties?" promptNeeded="false" repositoryContextId="_BuZaIDPgEeeSd-asXrs5nw" type="id_String" value="&quot;C:/Users/smolab/Downloads/odf_new_codes/output/reference/dlm_config_properties.properties&quot;"/>
+    <contextParameter comment="&quot;C:/Users/smolab/Downloads/odf_new_codes/output/reference/dlm_customer_map.csv&quot;" name="dlm_customer_map_file" prompt="dlm_customer_map_file?" promptNeeded="false" repositoryContextId="_BuZaIDPgEeeSd-asXrs5nw" type="id_String" value=""/>
+    <contextParameter comment="&quot;C:/Users/smolab/Downloads/odf_new_codes/output/input/&quot;" name="dlm_src_file_Directory" prompt="dlm_src_file_Directory?" promptNeeded="false" repositoryContextId="_BuZaIDPgEeeSd-asXrs5nw" type="id_String" value=""/>
+    <contextParameter comment="" name="file_name" prompt="file_name?" promptNeeded="false" repositoryContextId="_BuZaIDPgEeeSd-asXrs5nw" type="id_String" value=""/>
+    <contextParameter comment="&quot;C:/Users/smolab/Downloads/odf_new_codes/output/interim/&quot;" name="interim_dir" prompt="interim_dir?" promptNeeded="false" repositoryContextId="_BuZaIDPgEeeSd-asXrs5nw" type="id_String" value=""/>
+    <contextParameter comment="" name="job_start_time" prompt="job_start_time?" promptNeeded="false" repositoryContextId="_BuZaIDPgEeeSd-asXrs5nw" type="id_String" value=""/>
+    <contextParameter comment="&quot;C:/Users/smolab/Downloads/odf_new_codes/output/load_files/&quot;" name="load_dir" prompt="load_dir?" promptNeeded="false" repositoryContextId="_BuZaIDPgEeeSd-asXrs5nw" type="id_String" value=""/>
+  </context>
+  <context confirmationNeeded="false" name="Prod">
+    <contextParameter comment="&quot;C:/Users/smolab/Downloads/odf_new_codes/output/reference/dlm_config_properties.properties&quot;" name="dlm_config_properties" prompt="dlm_config_properties?" promptNeeded="false" repositoryContextId="_BuZaIDPgEeeSd-asXrs5nw" type="id_String" value="&quot;C:/Users/smolab/Downloads/odf_new_codes/output/reference/dlm_config_properties.properties&quot;"/>
+    <contextParameter comment="&quot;C:/Users/smolab/Downloads/odf_new_codes/output/reference/dlm_customer_map.csv&quot;" name="dlm_customer_map_file" prompt="dlm_customer_map_file?" promptNeeded="false" repositoryContextId="_BuZaIDPgEeeSd-asXrs5nw" type="id_String" value=""/>
+    <contextParameter comment="&quot;C:/Users/smolab/Downloads/odf_new_codes/output/input/&quot;" name="dlm_src_file_Directory" prompt="dlm_src_file_Directory?" promptNeeded="false" repositoryContextId="_BuZaIDPgEeeSd-asXrs5nw" type="id_String" value=""/>
+    <contextParameter comment="" name="file_name" prompt="file_name?" promptNeeded="false" repositoryContextId="_BuZaIDPgEeeSd-asXrs5nw" type="id_String" value=""/>
+    <contextParameter comment="&quot;C:/Users/smolab/Downloads/odf_new_codes/output/interim/&quot;" name="interim_dir" prompt="interim_dir?" promptNeeded="false" repositoryContextId="_BuZaIDPgEeeSd-asXrs5nw" type="id_String" value=""/>
+    <contextParameter comment="" name="job_start_time" prompt="job_start_time?" promptNeeded="false" repositoryContextId="_BuZaIDPgEeeSd-asXrs5nw" type="id_String" value=""/>
+    <contextParameter comment="&quot;C:/Users/smolab/Downloads/odf_new_codes/output/load_files/&quot;" name="load_dir" prompt="load_dir?" promptNeeded="false" repositoryContextId="_BuZaIDPgEeeSd-asXrs5nw" type="id_String" value=""/>
+  </context>
+  <context confirmationNeeded="false" name="Dev">
+    <contextParameter comment="&quot;C:/Users/smolab/Downloads/odf_new_codes/output/reference/dlm_config_properties.properties&quot;" name="dlm_config_properties" prompt="dlm_config_properties?" promptNeeded="false" repositoryContextId="_BuZaIDPgEeeSd-asXrs5nw" type="id_String" value="&quot;C:/Users/smolab/Downloads/odf_new_codes/output/reference/dlm_config_properties.properties&quot;"/>
+    <contextParameter comment="&quot;C:/Users/smolab/Downloads/odf_new_codes/output/reference/dlm_customer_map.csv&quot;" name="dlm_customer_map_file" prompt="dlm_customer_map_file?" promptNeeded="false" repositoryContextId="_BuZaIDPgEeeSd-asXrs5nw" type="id_String" value=""/>
+    <contextParameter comment="&quot;C:/Users/smolab/Downloads/odf_new_codes/output/input/&quot;" name="dlm_src_file_Directory" prompt="dlm_src_file_Directory?" promptNeeded="false" repositoryContextId="_BuZaIDPgEeeSd-asXrs5nw" type="id_String" value=""/>
+    <contextParameter comment="" name="file_name" prompt="file_name?" promptNeeded="false" repositoryContextId="_BuZaIDPgEeeSd-asXrs5nw" type="id_String" value=""/>
+    <contextParameter comment="&quot;C:/Users/smolab/Downloads/odf_new_codes/output/interim/&quot;" name="interim_dir" prompt="interim_dir?" promptNeeded="false" repositoryContextId="_BuZaIDPgEeeSd-asXrs5nw" type="id_String" value=""/>
+    <contextParameter comment="" name="job_start_time" prompt="job_start_time?" promptNeeded="false" repositoryContextId="_BuZaIDPgEeeSd-asXrs5nw" type="id_String" value=""/>
+    <contextParameter comment="&quot;C:/Users/smolab/Downloads/odf_new_codes/output/load_files/&quot;" name="load_dir" prompt="load_dir?" promptNeeded="false" repositoryContextId="_BuZaIDPgEeeSd-asXrs5nw" type="id_String" value=""/>
+  </context>
+  <context confirmationNeeded="false" name="PreProd">
+    <contextParameter comment="&quot;C:/Users/smolab/Downloads/odf_new_codes/output/reference/dlm_config_properties.properties&quot;" name="dlm_config_properties" prompt="dlm_config_properties?" promptNeeded="false" repositoryContextId="_BuZaIDPgEeeSd-asXrs5nw" type="id_String" value="&quot;C:/Users/smolab/Downloads/odf_new_codes/output/reference/dlm_config_properties.properties&quot;"/>
+    <contextParameter comment="&quot;C:/Users/smolab/Downloads/odf_new_codes/output/reference/dlm_customer_map.csv&quot;" name="dlm_customer_map_file" prompt="dlm_customer_map_file?" promptNeeded="false" repositoryContextId="_BuZaIDPgEeeSd-asXrs5nw" type="id_String" value=""/>
+    <contextParameter comment="&quot;C:/Users/smolab/Downloads/odf_new_codes/output/input/&quot;" name="dlm_src_file_Directory" prompt="dlm_src_file_Directory?" promptNeeded="false" repositoryContextId="_BuZaIDPgEeeSd-asXrs5nw" type="id_String" value=""/>
+    <contextParameter comment="" name="file_name" prompt="file_name?" promptNeeded="false" repositoryContextId="_BuZaIDPgEeeSd-asXrs5nw" type="id_String" value=""/>
+    <contextParameter comment="&quot;C:/Users/smolab/Downloads/odf_new_codes/output/interim/&quot;" name="interim_dir" prompt="interim_dir?" promptNeeded="false" repositoryContextId="_BuZaIDPgEeeSd-asXrs5nw" type="id_String" value=""/>
+    <contextParameter comment="" name="job_start_time" prompt="job_start_time?" promptNeeded="false" repositoryContextId="_BuZaIDPgEeeSd-asXrs5nw" type="id_String" value=""/>
+    <contextParameter comment="&quot;C:/Users/smolab/Downloads/odf_new_codes/output/load_files/&quot;" name="load_dir" prompt="load_dir?" promptNeeded="false" repositoryContextId="_BuZaIDPgEeeSd-asXrs5nw" type="id_String" value=""/>
+  </context>
   <parameters>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="0"/>
@@ -774,13 +809,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_8a1b8076-c0e4-4fea-9252-f9bc6e9022a8"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>wx/tdS/sSpsh20RFlMEhCpiE23A+U2CkamZDRwgj7EOLn0IUrqa/X5fhP8Et7dIYyUVfgz2LZy8t
-r8xJFZ62tA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_1a12e241-5443-4046-8aec-112f9ac0e879"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Nt4c3OHe/ETutkKhH86oiqRm/rJHD8Vi82mmcTO+9id7qzdOsYKwMJK2sKcNYLqna6mfRFSWl06M
-3OOcIt7aEQ==</DigestValue></Reference></SignedInfo><SignatureValue>fsmUKQ4AkVaWWSLZcM3t/WdjEa1FzX5lh+jhCUqp5+jCRe6V6SU7KsppKt9bYOQphh/VugkTxMrl
-kqBGsDZWlrvFelcgdYTOAh7gu/DyPeWpdtG40rsKzWeb3w/I64J0G//Op21CFt2p94kQuZvNTpTF
-XuXQcyzwOe2akRxMXpBKCROi1NlmEn5UFrbkoJ2WosOlAKDNwsNBW/SdzNGWSyRS/S9g9Fp0SN0r
-K8O3+nQmr8N933s0JCjzOov+R9Uoowm7dCYjnsuLscssJR0o7eNFhvD+1FjaD88K61tCfSOcAcZs
-MfeNvLMqUwtI5G6LXncskdjfV1s5Brq/YtB8Xw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_12a525d6-3ed1-4c7d-8564-1aa6f9afada3"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>GMnAiazZjdbN16lJ8daZfdrl0ueI5Ww+CP7pY1odOZWxA4MBqZfFchbj/fe85cczibgyZMZqZc2y
+r4fD2QjEBA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_c632881e-ba25-47b0-92af-cb16671bd484"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>0K6u8GsKDVclZIGWck7gSahBRtKVRi3ydf6IBc7Q6+UoejwqabztvFtGeDztIcHwHsMBvJ2BU2bD
+Ds5Erin5+A==</DigestValue></Reference></SignedInfo><SignatureValue>gC0P7x1eVCManu25VLd9fAvI0c/wIU2zrzPtoo+nf7wMPw2iIB78lVo1jlcv/IpN+jKb2m3k82jy
+iPp97HwC5SZBJyMMHWFli0ybpEG68ZllM7ujdheU3AIF0baSGPHqHlhjvradujxmr9O7W2B581WR
+yCvhZLlcespphTKxWOWIZWyGZwv4rFZH8spD4BkMssXykibNxp5jdHTAVXyZfQgMtZ9ymJ6s0Nz3
+A7alT/ACQnf1VvGO5hERW9feHahU9MGZccLt+gCFDoWzWH3dad1bvr2NTsyD94tBm5pI+zOKEwjd
+1wYNwVKKksrM9JNkkiOqNnWBff4KUwNvhGkqCQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -804,4 +839,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_1a12e241-5443-4046-8aec-112f9ac0e879" Target="#_8a1b8076-c0e4-4fea-9252-f9bc6e9022a8"><Timestamp>2019-05-16 13:07:41</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_c632881e-ba25-47b0-92af-cb16671bd484" Target="#_12a525d6-3ed1-4c7d-8564-1aa6f9afada3"><Timestamp>2019-05-20 09:18:43</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
