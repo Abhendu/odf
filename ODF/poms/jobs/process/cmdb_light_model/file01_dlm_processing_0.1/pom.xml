@@ -107,6 +107,11 @@
     </dependency>
     <dependency>
       <groupId>org.example.odf.job</groupId>
+      <artifactId>file03_dlm_customer_load</artifactId>
+      <version>0.1.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.example.odf.job</groupId>
       <artifactId>SUBJOB_delta_record_processing</artifactId>
       <version>0.1.0</version>
     </dependency>
