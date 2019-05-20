@@ -547,31 +547,72 @@
     </metadata>
     <nodeData xsi:type="TalendXMLMap:XmlMapData">
       <inputTrees lookupMode="LOAD_ONCE" matchingMode="ALL_ROWS" name="row7">
-        <nodes name="ACTION_TYPE" outgoingConnections="//@node.2/@nodeData/@connections.0" type="id_String" xpath="row7/ACTION_TYPE"/>
-        <nodes name="ODF_KEY" outgoingConnections="//@node.2/@nodeData/@connections.1" type="id_String" xpath="row7/ODF_KEY"/>
-        <nodes name="name" outgoingConnections="//@node.2/@nodeData/@connections.2" type="id_String" xpath="row7/name"/>
-        <nodes name="customer_facing_service" outgoingConnections="//@node.2/@nodeData/@connections.3" type="id_String" xpath="row7/customer_facing_service"/>
-        <nodes name="odf_source" outgoingConnections="//@node.2/@nodeData/@connections.4" type="id_String" xpath="row7/odf_source"/>
-        <nodes name="dq" type="id_Integer" xpath="row7/dq"/>
-        <nodes name="preprod" type="id_Integer" xpath="row7/preprod"/>
-        <nodes name="prod" type="id_Integer" xpath="row7/prod"/>
-        <nodes name="timestamp" type="id_Date" xpath="row7/timestamp"/>
-        <nodes name="delete_flg" type="id_Integer" xpath="row7/delete_flg"/>
+        <nodes name="u_name" outgoingConnections="//@node.2/@nodeData/@connections.1" type="id_String" xpath="row7/u_name"/>
+        <nodes name="u_subscriber" type="id_String" xpath="row7/u_subscriber"/>
+        <nodes name="u_country" type="id_String" xpath="row7/u_country"/>
+        <nodes name="u_inventory_id" type="id_String" xpath="row7/u_inventory_id"/>
+        <nodes name="u_third_party_customer_id" type="id_String" xpath="row7/u_third_party_customer_id"/>
+        <nodes name="u_device_id" nullable="false" outgoingConnections="//@node.2/@nodeData/@connections.0" type="id_String" xpath="row7/u_device_id"/>
+        <nodes name="u_asset_entity_type" type="id_String" xpath="row7/u_asset_entity_type"/>
+        <nodes name="u_msisdn" type="id_String" xpath="row7/u_msisdn"/>
+        <nodes name="u_imei" type="id_String" xpath="row7/u_imei"/>
+        <nodes name="u_skuid" type="id_String" xpath="row7/u_skuid"/>
+        <nodes name="u_make" type="id_String" xpath="row7/u_make"/>
+        <nodes name="u_model_number" type="id_String" xpath="row7/u_model_number"/>
+        <nodes name="u_user_first_name" type="id_String" xpath="row7/u_user_first_name"/>
+        <nodes name="u_user_last_name" type="id_String" xpath="row7/u_user_last_name"/>
+        <nodes name="u_email_address" type="id_String" xpath="row7/u_email_address"/>
+        <nodes name="u_contact_tel_number" type="id_String" xpath="row7/u_contact_tel_number"/>
+        <nodes name="u_lease_start_date" type="id_String" xpath="row7/u_lease_start_date"/>
+        <nodes name="u_lease_end_date" type="id_String" xpath="row7/u_lease_end_date"/>
+        <nodes name="u_warranty_start_date" type="id_String" xpath="row7/u_warranty_start_date"/>
+        <nodes name="u_warranty_end_date" type="id_String" xpath="row7/u_warranty_end_date"/>
+        <nodes name="u_gscategory" type="id_String" xpath="row7/u_gscategory"/>
+        <nodes name="u_reverse_exchange_type" type="id_String" xpath="row7/u_reverse_exchange_type"/>
+        <nodes name="u_status" type="id_String" xpath="row7/u_status"/>
+        <nodes name="u_user_address_line_1" type="id_String" xpath="row7/u_user_address_line_1"/>
+        <nodes name="u_user_address_line_2" type="id_String" xpath="row7/u_user_address_line_2"/>
+        <nodes name="u_user_address_line_3" type="id_String" xpath="row7/u_user_address_line_3"/>
+        <nodes name="u_user_address_line_4" type="id_String" xpath="row7/u_user_address_line_4"/>
+        <nodes name="u_user_city_state" type="id_String" xpath="row7/u_user_city_state"/>
+        <nodes name="u_user_post_code" type="id_String" xpath="row7/u_user_post_code"/>
+        <nodes name="u_user_country_code" type="id_String" xpath="row7/u_user_country_code"/>
+        <nodes name="u_user_country" type="id_String" xpath="row7/u_user_country"/>
+        <nodes name="u_sim_iccid" type="id_String" xpath="row7/u_sim_iccid"/>
+        <nodes name="u_bulk_order_id" type="id_String" xpath="row7/u_bulk_order_id"/>
+        <nodes name="u_order_date" type="id_String" xpath="row7/u_order_date"/>
+        <nodes name="u_ban" type="id_String" xpath="row7/u_ban"/>
+        <nodes name="u_custref" type="id_String" xpath="row7/u_custref"/>
+        <nodes name="u_transaction_type" type="id_String" xpath="row7/u_transaction_type"/>
+        <nodes name="u_user_id" type="id_String" xpath="row7/u_user_id"/>
+        <nodes name="u_business_unit" type="id_String" xpath="row7/u_business_unit"/>
+        <nodes name="u_cost_centre" type="id_String" xpath="row7/u_cost_centre"/>
+        <nodes name="u_delivery_date" type="id_String" xpath="row7/u_delivery_date"/>
+        <nodes name="u_sim_number" type="id_String" xpath="row7/u_sim_number"/>
+        <nodes name="u_dispatched_date" type="id_String" xpath="row7/u_dispatched_date"/>
+        <nodes name="u_device_serial_number" type="id_String" xpath="row7/u_device_serial_number"/>
+        <nodes name="u_customer_notes" type="id_String" xpath="row7/u_customer_notes"/>
+        <nodes name="u_sim_activation_date" type="id_String" xpath="row7/u_sim_activation_date"/>
+        <nodes name="u_sim_activation_status" type="id_String" xpath="row7/u_sim_activation_status"/>
+        <nodes name="customer_facing_service" type="id_String" xpath="row7/customer_facing_service"/>
+        <nodes name="odf_source" type="id_String" xpath="row7/odf_source"/>
+        <nodes name="u_source" type="id_String" xpath="row7/u_source"/>
+        <nodes name="dq" type="id_String" xpath="row7/dq"/>
+        <nodes name="preprod" type="id_String" xpath="row7/preprod"/>
+        <nodes name="prod" type="id_String" xpath="row7/prod"/>
+        <nodes name="delete_flg" type="id_String" xpath="row7/delete_flg"/>
       </inputTrees>
       <outputTrees name="out2">
         <nodes expression="" name="out" pattern="" type="id_Document" xpath="out2/out">
-          <children main="true" name="soapenv:Envelope" type="id_String" xpath="out2.out:/soapenv:Envelope" xsi:type="TalendXMLMap:OutputTreeNode">
-            <children defaultValue="http://www.service-now.com/u_customer" name="u" nodeType="NAME_SPACE" type="id_Character" xpath="out2.out:/soapenv:Envelope/xmlns:u" xsi:type="TalendXMLMap:OutputTreeNode"/>
+          <children loop="true" main="true" name="soapenv:Envelope" type="id_String" xpath="out2.out:/soapenv:Envelope" xsi:type="TalendXMLMap:OutputTreeNode">
+            <children defaultValue="http://www.service-now.com/u_dlm_customer_map_stage" name="u" nodeType="NAME_SPACE" type="id_Character" xpath="out2.out:/soapenv:Envelope/xmlns:u" xsi:type="TalendXMLMap:OutputTreeNode"/>
             <children defaultValue="http://schemas.xmlsoap.org/soap/envelope/" name="soapenv" nodeType="NAME_SPACE" type="id_String" xpath="out2.out:/soapenv:Envelope/xmlns:soapenv" xsi:type="TalendXMLMap:OutputTreeNode"/>
             <children name="soapenv:Header" type="id_String" xpath="out2.out:/soapenv:Envelope/soapenv:Header" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children main="true" name="soapenv:Body" type="id_String" xpath="out2.out:/soapenv:Envelope/soapenv:Body" xsi:type="TalendXMLMap:OutputTreeNode">
-              <children main="true" name="u:insertMultiple" type="id_String" xpath="out2.out:/soapenv:Envelope/soapenv:Body/u:insertMultiple" xsi:type="TalendXMLMap:OutputTreeNode">
-                <children expression="" loop="true" main="true" name="record" type="id_String" xpath="out2.out:/soapenv:Envelope/soapenv:Body/u:insertMultiple/record" xsi:type="TalendXMLMap:OutputTreeNode">
-                  <children expression="row7.ACTION_TYPE" incomingConnections="//@node.2/@nodeData/@connections.0" name="ACTION_TYPE" type="id_String" xpath="out2.out:/soapenv:Envelope/soapenv:Body/u:insertMultiple/record/ACTION_TYPE" xsi:type="TalendXMLMap:OutputTreeNode"/>
-                  <children expression="row7.ODF_KEY" incomingConnections="//@node.2/@nodeData/@connections.1" name="ODF_KEY" type="id_String" xpath="out2.out:/soapenv:Envelope/soapenv:Body/u:insertMultiple/record/ODF_KEY" xsi:type="TalendXMLMap:OutputTreeNode"/>
-                  <children expression="row7.name" incomingConnections="//@node.2/@nodeData/@connections.2" name="name" type="id_String" xpath="out2.out:/soapenv:Envelope/soapenv:Body/u:insertMultiple/record/name" xsi:type="TalendXMLMap:OutputTreeNode"/>
-                  <children expression="row7.customer_facing_service" incomingConnections="//@node.2/@nodeData/@connections.3" name="customer_facing_service" type="id_String" xpath="out2.out:/soapenv:Envelope/soapenv:Body/u:insertMultiple/record/customer_facing_service" xsi:type="TalendXMLMap:OutputTreeNode"/>
-                  <children expression="row7.odf_source" incomingConnections="//@node.2/@nodeData/@connections.4" name="odf_source" type="id_String" xpath="out2.out:/soapenv:Envelope/soapenv:Body/u:insertMultiple/record/odf_source" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children name="soapenv:Body" type="id_String" xpath="out2.out:/soapenv:Envelope/soapenv:Body" xsi:type="TalendXMLMap:OutputTreeNode">
+              <children name="u:insertMultiple" type="id_String" xpath="out2.out:/soapenv:Envelope/soapenv:Body/u:insertMultiple" xsi:type="TalendXMLMap:OutputTreeNode">
+                <children name="record" type="id_String" xpath="out2.out:/soapenv:Envelope/soapenv:Body/u:insertMultiple/record" xsi:type="TalendXMLMap:OutputTreeNode">
+                  <children expression="row7.u_device_id" incomingConnections="//@node.2/@nodeData/@connections.0" name="u_device_id" type="id_Integer" xpath="out2.out:/soapenv:Envelope/soapenv:Body/u:insertMultiple/record/u_device_id" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children expression="row7.u_name" incomingConnections="//@node.2/@nodeData/@connections.1" name="u_name" type="id_String" xpath="out2.out:/soapenv:Envelope/soapenv:Body/u:insertMultiple/record/u_name" xsi:type="TalendXMLMap:OutputTreeNode"/>
                 </children>
               </children>
             </children>
@@ -579,11 +620,8 @@
         </nodes>
       </outputTrees>
       <varTables minimized="true" name="Var"/>
-      <connections source="//@node.2/@nodeData/@inputTrees.0/@nodes.0" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.3/@children.0/@children.0/@children.0" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.2/@nodeData/@inputTrees.0/@nodes.1" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.3/@children.0/@children.0/@children.1" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.2/@nodeData/@inputTrees.0/@nodes.2" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.3/@children.0/@children.0/@children.2" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.2/@nodeData/@inputTrees.0/@nodes.3" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.3/@children.0/@children.0/@children.3" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.2/@nodeData/@inputTrees.0/@nodes.4" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.3/@children.0/@children.0/@children.4" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.2/@nodeData/@inputTrees.0/@nodes.5" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.3/@children.0/@children.0/@children.0" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.2/@nodeData/@inputTrees.0/@nodes.0" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.3/@children.0/@children.0/@children.1" xsi:type="TalendXMLMap:Connection"/>
     </nodeData>
   </node>
   <node componentName="tSOAP" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1120" posY="96">
@@ -809,13 +847,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_12a525d6-3ed1-4c7d-8564-1aa6f9afada3"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>GMnAiazZjdbN16lJ8daZfdrl0ueI5Ww+CP7pY1odOZWxA4MBqZfFchbj/fe85cczibgyZMZqZc2y
-r4fD2QjEBA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_c632881e-ba25-47b0-92af-cb16671bd484"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>0K6u8GsKDVclZIGWck7gSahBRtKVRi3ydf6IBc7Q6+UoejwqabztvFtGeDztIcHwHsMBvJ2BU2bD
-Ds5Erin5+A==</DigestValue></Reference></SignedInfo><SignatureValue>gC0P7x1eVCManu25VLd9fAvI0c/wIU2zrzPtoo+nf7wMPw2iIB78lVo1jlcv/IpN+jKb2m3k82jy
-iPp97HwC5SZBJyMMHWFli0ybpEG68ZllM7ujdheU3AIF0baSGPHqHlhjvradujxmr9O7W2B581WR
-yCvhZLlcespphTKxWOWIZWyGZwv4rFZH8spD4BkMssXykibNxp5jdHTAVXyZfQgMtZ9ymJ6s0Nz3
-A7alT/ACQnf1VvGO5hERW9feHahU9MGZccLt+gCFDoWzWH3dad1bvr2NTsyD94tBm5pI+zOKEwjd
-1wYNwVKKksrM9JNkkiOqNnWBff4KUwNvhGkqCQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_4929c5df-028b-46ce-aa41-f5fd58955326"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>izqNHH146rgWFeSnOa9XlOO0boruT4mJwcvApG/+DUGhUClgUV/onmrp7f/tjr6M+5u/1N9oDsTt
+o9h+a0JwnA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_931ea019-4857-4b30-b319-7c6f2ba1d536"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>KpkLZO0ykhKMrw6AtibvG71A/Hmk+9gqWcG/Q/fMQuZNA9oDyvFJSIjdEeuSVtHluSKpf/Yk4ax0
+m0EbbuZHdw==</DigestValue></Reference></SignedInfo><SignatureValue>1zl1LdH+autE7KA0oEtit0+e8VQTo5W+dSiSARjFpkpPKi224AuVgC+pXWLR/PQFqsBc4QgIepyc
+6SLVRUa4AAyFS4K2k85Cs5XAG0rlEmtuPg4wBgr1bkB2Vz8hAEiGauRepa58JEd9OT0/ebhX0Ht5
+Pr1N1E10eFZUxgxaUDUrwmhpV/JCi4f8BJvZ7trnyL52QL6v7FVFJC9puP130S+PV3UTz3s8ZmDA
+cvi2Fpv1aMeJ4GSz3KpXjy4jwjZGyR+hEhZpLY0SwiH40I2GjqPBK3T1ygRuqdsBsEDWXc6AwfWD
+4ALriPVvotmh4KcXf8D1PfmM0tzyo/exsg7bpQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -839,4 +877,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_c632881e-ba25-47b0-92af-cb16671bd484" Target="#_12a525d6-3ed1-4c7d-8564-1aa6f9afada3"><Timestamp>2019-05-20 09:18:43</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_931ea019-4857-4b30-b319-7c6f2ba1d536" Target="#_4929c5df-028b-46ce-aa41-f5fd58955326"><Timestamp>2019-05-20 09:50:36</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
