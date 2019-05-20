@@ -7,9 +7,9 @@
     <contextParameter comment="&quot;C:/Users/smolab/Downloads/odf_new_codes/output/interim/&quot;" name="interim_dir" prompt="interim_dir?" promptNeeded="false" repositoryContextId="_BuZaIDPgEeeSd-asXrs5nw" type="id_String" value=""/>
     <contextParameter comment="" name="job_start_time" prompt="job_start_time?" promptNeeded="false" repositoryContextId="_BuZaIDPgEeeSd-asXrs5nw" type="id_String" value=""/>
     <contextParameter comment="&quot;C:/Users/smolab/Downloads/odf_new_codes/output/load_files/&quot;" name="load_dir" prompt="load_dir?" promptNeeded="false" repositoryContextId="_BuZaIDPgEeeSd-asXrs5nw" type="id_String" value=""/>
-    <contextParameter comment="" name="sn_login" prompt="sn_login?" promptNeeded="false" type="id_String" value=""/>
-    <contextParameter comment="" name="sn_password" prompt="sn_password?" promptNeeded="false" type="id_String" value=""/>
-    <contextParameter comment="" name="sn_url" prompt="sn_url?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="sn_login" prompt="sn_login?" promptNeeded="false" repositoryContextId="_BuZaIDPgEeeSd-asXrs5nw" type="id_String" value=""/>
+    <contextParameter comment="" name="sn_password" prompt="sn_password?" promptNeeded="false" repositoryContextId="_BuZaIDPgEeeSd-asXrs5nw" type="id_String" value=""/>
+    <contextParameter comment="" name="sn_url" prompt="sn_url?" promptNeeded="false" repositoryContextId="_BuZaIDPgEeeSd-asXrs5nw" type="id_String" value=""/>
   </context>
   <context confirmationNeeded="false" name="Prod">
     <contextParameter comment="&quot;C:/Users/smolab/Downloads/odf_new_codes/output/reference/dlm_config_properties.properties&quot;" name="dlm_config_properties" prompt="dlm_config_properties?" promptNeeded="false" repositoryContextId="_BuZaIDPgEeeSd-asXrs5nw" type="id_String" value="&quot;C:/Users/smolab/Downloads/odf_new_codes/output/reference/dlm_config_properties.properties&quot;"/>
@@ -19,9 +19,9 @@
     <contextParameter comment="&quot;C:/Users/smolab/Downloads/odf_new_codes/output/interim/&quot;" name="interim_dir" prompt="interim_dir?" promptNeeded="false" repositoryContextId="_BuZaIDPgEeeSd-asXrs5nw" type="id_String" value=""/>
     <contextParameter comment="" name="job_start_time" prompt="job_start_time?" promptNeeded="false" repositoryContextId="_BuZaIDPgEeeSd-asXrs5nw" type="id_String" value=""/>
     <contextParameter comment="&quot;C:/Users/smolab/Downloads/odf_new_codes/output/load_files/&quot;" name="load_dir" prompt="load_dir?" promptNeeded="false" repositoryContextId="_BuZaIDPgEeeSd-asXrs5nw" type="id_String" value=""/>
-    <contextParameter comment="" name="sn_login" prompt="sn_login?" promptNeeded="false" type="id_String" value=""/>
-    <contextParameter comment="" name="sn_password" prompt="sn_password?" promptNeeded="false" type="id_String" value=""/>
-    <contextParameter comment="" name="sn_url" prompt="sn_url?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="sn_login" prompt="sn_login?" promptNeeded="false" repositoryContextId="_BuZaIDPgEeeSd-asXrs5nw" type="id_String" value=""/>
+    <contextParameter comment="" name="sn_password" prompt="sn_password?" promptNeeded="false" repositoryContextId="_BuZaIDPgEeeSd-asXrs5nw" type="id_String" value=""/>
+    <contextParameter comment="" name="sn_url" prompt="sn_url?" promptNeeded="false" repositoryContextId="_BuZaIDPgEeeSd-asXrs5nw" type="id_String" value=""/>
   </context>
   <context confirmationNeeded="false" name="Dev">
     <contextParameter comment="&quot;C:/Users/smolab/Downloads/odf_new_codes/output/reference/dlm_config_properties.properties&quot;" name="dlm_config_properties" prompt="dlm_config_properties?" promptNeeded="false" repositoryContextId="_BuZaIDPgEeeSd-asXrs5nw" type="id_String" value="&quot;C:/Users/smolab/Downloads/odf_new_codes/output/reference/dlm_config_properties.properties&quot;"/>
@@ -31,9 +31,9 @@
     <contextParameter comment="&quot;C:/Users/smolab/Downloads/odf_new_codes/output/interim/&quot;" name="interim_dir" prompt="interim_dir?" promptNeeded="false" repositoryContextId="_BuZaIDPgEeeSd-asXrs5nw" type="id_String" value=""/>
     <contextParameter comment="" name="job_start_time" prompt="job_start_time?" promptNeeded="false" repositoryContextId="_BuZaIDPgEeeSd-asXrs5nw" type="id_String" value=""/>
     <contextParameter comment="&quot;C:/Users/smolab/Downloads/odf_new_codes/output/load_files/&quot;" name="load_dir" prompt="load_dir?" promptNeeded="false" repositoryContextId="_BuZaIDPgEeeSd-asXrs5nw" type="id_String" value=""/>
-    <contextParameter comment="" name="sn_login" prompt="sn_login?" promptNeeded="false" type="id_String" value=""/>
-    <contextParameter comment="" name="sn_password" prompt="sn_password?" promptNeeded="false" type="id_String" value=""/>
-    <contextParameter comment="" name="sn_url" prompt="sn_url?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="sn_login" prompt="sn_login?" promptNeeded="false" repositoryContextId="_BuZaIDPgEeeSd-asXrs5nw" type="id_String" value=""/>
+    <contextParameter comment="" name="sn_password" prompt="sn_password?" promptNeeded="false" repositoryContextId="_BuZaIDPgEeeSd-asXrs5nw" type="id_String" value=""/>
+    <contextParameter comment="" name="sn_url" prompt="sn_url?" promptNeeded="false" repositoryContextId="_BuZaIDPgEeeSd-asXrs5nw" type="id_String" value=""/>
   </context>
   <context confirmationNeeded="false" name="PreProd">
     <contextParameter comment="&quot;C:/Users/smolab/Downloads/odf_new_codes/output/reference/dlm_config_properties.properties&quot;" name="dlm_config_properties" prompt="dlm_config_properties?" promptNeeded="false" repositoryContextId="_BuZaIDPgEeeSd-asXrs5nw" type="id_String" value="&quot;C:/Users/smolab/Downloads/odf_new_codes/output/reference/dlm_config_properties.properties&quot;"/>
@@ -43,9 +43,9 @@
     <contextParameter comment="&quot;C:/Users/smolab/Downloads/odf_new_codes/output/interim/&quot;" name="interim_dir" prompt="interim_dir?" promptNeeded="false" repositoryContextId="_BuZaIDPgEeeSd-asXrs5nw" type="id_String" value=""/>
     <contextParameter comment="" name="job_start_time" prompt="job_start_time?" promptNeeded="false" repositoryContextId="_BuZaIDPgEeeSd-asXrs5nw" type="id_String" value=""/>
     <contextParameter comment="&quot;C:/Users/smolab/Downloads/odf_new_codes/output/load_files/&quot;" name="load_dir" prompt="load_dir?" promptNeeded="false" repositoryContextId="_BuZaIDPgEeeSd-asXrs5nw" type="id_String" value=""/>
-    <contextParameter comment="" name="sn_login" prompt="sn_login?" promptNeeded="false" type="id_String" value=""/>
-    <contextParameter comment="" name="sn_password" prompt="sn_password?" promptNeeded="false" type="id_String" value=""/>
-    <contextParameter comment="" name="sn_url" prompt="sn_url?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="sn_login" prompt="sn_login?" promptNeeded="false" repositoryContextId="_BuZaIDPgEeeSd-asXrs5nw" type="id_String" value=""/>
+    <contextParameter comment="" name="sn_password" prompt="sn_password?" promptNeeded="false" repositoryContextId="_BuZaIDPgEeeSd-asXrs5nw" type="id_String" value=""/>
+    <contextParameter comment="" name="sn_url" prompt="sn_url?" promptNeeded="false" repositoryContextId="_BuZaIDPgEeeSd-asXrs5nw" type="id_String" value=""/>
   </context>
   <parameters>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
@@ -874,13 +874,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_bc78ebfb-dc2d-4567-87e9-143cc85e644e"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>dB8RWHoPs3hVIroLe5H64zVsdoWVIeFCYzz+aROAUPP5OBGnVtij5wK8md+R/ub7H0F8k4Y/YVqL
-ZGMaBHxzFA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_293b0e77-bc94-4e2b-8ec8-fdb8123e40b8"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Z43uWdQmOE6e2tmFu4fQJFdfb6VynT4uUXTymkChmw8VWrjFc6msxXdV7ZKC23KNG37urpuOivp8
-XMx3AMOKdA==</DigestValue></Reference></SignedInfo><SignatureValue>hltUuPIYKljklvZOJxk4unbsgSOZ/GNByhEmtvVsosF8/T/z6qMOhfI1IbsPAk0ZrtzernatgG54
-5ztsdQrfKNZgZlIgwlnJqXoWpmX7eC3XkIwEQSNoCTj9N6qWMAEkEqTvG9S0GtUWZKwYcXWyOXuP
-DqO1VZ/+h4tWJLZm8rIP/eTKqpVpFEerC9Hv4NwHxYEp2TsQd43ayxZDfwnyBj7r9IF49gPPpdII
-XcGvg2zW4XVZVtA7+3T9yjFw9BGmGIsU/8CoEzv2sl2C28F1wZ8h0nOvSNhM51YPOKlq4VBnvpwm
-7AM9ZCLfcJlCtOmp1xVGK794Le82EXoGgvXPug==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_46b3c4aa-b46a-4248-8abb-f224aecf3cac"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>3Xg1fxGZ44i55/Ind+5O30VCophJzHqzbY8YojnuIXVeg4/WHI7WnUxHMDdXwXWAouU/oHbEXjPJ
+ZUCr22ACLg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_8ffc1fbf-9d51-4edf-8548-83fabe15b476"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>kbRrl/mEC4KOfYjbQ1059k82Ro9ohaWBqC933gUMHX6/t73vV5xePrQZJSwMulMarYHFAoVbs2u1
+62qQORBl1g==</DigestValue></Reference></SignedInfo><SignatureValue>dOoGnSPBp7DLwFhLNWCJHkB+P2Zoo10j33sBQEprmqHW3t8C5AtDq4933vxNPpsT0CSLhuysJkkT
+J5BW+RFjZQxI8VqH7VjcSw7YWD605JAXSZEFP0A6cMp/oV8pgSOlNWjs7pUFjt8XZo1Bxag/13B/
+H22b7hNI/j3pXGccgkcYdnW/IqGaHWqtGxkwJjRjTPnmxBIHRhBSdx+U9ijYcKA9wA00ohYpVk9N
+8JWn6kP8IicBL5/BDsDqxxhPzTZ0p4+Ri7kGVf3+bFM9YiWcXWKpI0DKgQBPkyLnBg8zpUhOOQcy
+BGIwlJB6o21Sh9swDbPIyvnh4HRdvSSiMPXunA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -904,4 +904,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_293b0e77-bc94-4e2b-8ec8-fdb8123e40b8" Target="#_bc78ebfb-dc2d-4567-87e9-143cc85e644e"><Timestamp>2019-05-20 10:27:23</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_8ffc1fbf-9d51-4edf-8548-83fabe15b476" Target="#_46b3c4aa-b46a-4248-8abb-f224aecf3cac"><Timestamp>2019-05-20 10:29:41</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
